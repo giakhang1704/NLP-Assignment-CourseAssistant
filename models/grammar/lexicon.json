@@ -1,0 +1,1596 @@
+{
+  "version": 1,
+  "course_id": "CO3085",
+  "sources": [
+    "Original Part I archive grammar/lexicon",
+    "data/raw/entities.txt",
+    "data/raw/topics.txt",
+    "data/raw/evaluation_queries.txt"
+  ],
+  "notes": "Explicit domain vocabulary and reusable syntactic constructions. Evaluation questions inform required constructions, not answer facts. No wildcard terminal or full-question lookup; source labels may require mapping in evaluation.",
+  "categories": [
+    {
+      "symbol": "E_COURSE",
+      "entity_type": "course",
+      "entries": [
+        {
+          "id": "CO3085",
+          "value": "CO3085",
+          "aliases": [
+            "NLP",
+            "CO3085",
+            "Xử lý Ngôn ngữ Tự nhiên",
+            "Natural Language Processing",
+            "khóa học Xử lý Ngôn ngữ Tự nhiên",
+            "khóa học NLP",
+            "học phần NLP",
+            "môn học Xử lý Ngôn ngữ Tự nhiên"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_WEEK",
+      "entity_type": "week",
+      "entries": [
+        {
+          "id": "WEEK_01",
+          "value": 1,
+          "aliases": [
+            "tuần 1",
+            "tuần 01",
+            "week 1"
+          ]
+        },
+        {
+          "id": "WEEK_02",
+          "value": 2,
+          "aliases": [
+            "tuần 2",
+            "tuần 02",
+            "week 2"
+          ]
+        },
+        {
+          "id": "WEEK_03",
+          "value": 3,
+          "aliases": [
+            "tuần 3",
+            "tuần 03",
+            "week 3"
+          ]
+        },
+        {
+          "id": "WEEK_04",
+          "value": 4,
+          "aliases": [
+            "tuần 4",
+            "tuần 04",
+            "week 4"
+          ]
+        },
+        {
+          "id": "WEEK_05",
+          "value": 5,
+          "aliases": [
+            "tuần 5",
+            "tuần 05",
+            "week 5"
+          ]
+        },
+        {
+          "id": "WEEK_06",
+          "value": 6,
+          "aliases": [
+            "tuần 6",
+            "tuần 06",
+            "week 6"
+          ]
+        },
+        {
+          "id": "WEEK_07",
+          "value": 7,
+          "aliases": [
+            "tuần 7",
+            "tuần 07",
+            "week 7"
+          ]
+        },
+        {
+          "id": "WEEK_08",
+          "value": 8,
+          "aliases": [
+            "tuần 8",
+            "tuần 08",
+            "week 8"
+          ]
+        },
+        {
+          "id": "WEEK_09",
+          "value": 9,
+          "aliases": [
+            "tuần 9",
+            "tuần 09",
+            "week 9"
+          ]
+        },
+        {
+          "id": "WEEK_10",
+          "value": 10,
+          "aliases": [
+            "tuần 10",
+            "tuần 10",
+            "week 10"
+          ]
+        },
+        {
+          "id": "WEEK_11",
+          "value": 11,
+          "aliases": [
+            "tuần 11",
+            "tuần 11",
+            "week 11"
+          ]
+        },
+        {
+          "id": "WEEK_12",
+          "value": 12,
+          "aliases": [
+            "tuần 12",
+            "tuần 12",
+            "week 12"
+          ]
+        },
+        {
+          "id": "WEEK_13",
+          "value": 13,
+          "aliases": [
+            "tuần 13",
+            "tuần 13",
+            "week 13"
+          ]
+        },
+        {
+          "id": "WEEK_14",
+          "value": 14,
+          "aliases": [
+            "tuần 14",
+            "tuần 14",
+            "week 14"
+          ]
+        },
+        {
+          "id": "WEEK_15",
+          "value": 15,
+          "aliases": [
+            "tuần 15",
+            "tuần 15",
+            "week 15"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_CHAPTER",
+      "entity_type": "chapter",
+      "entries": [
+        {
+          "id": "CH01",
+          "value": 1,
+          "aliases": [
+            "chương 1",
+            "chương 01",
+            "chapter 1",
+            "CH01"
+          ]
+        },
+        {
+          "id": "CH02",
+          "value": 2,
+          "aliases": [
+            "chương 2",
+            "chương 02",
+            "chapter 2",
+            "CH02"
+          ]
+        },
+        {
+          "id": "CH03",
+          "value": 3,
+          "aliases": [
+            "chương 3",
+            "chương 03",
+            "chapter 3",
+            "CH03"
+          ]
+        },
+        {
+          "id": "CH04",
+          "value": 4,
+          "aliases": [
+            "chương 4",
+            "chương 04",
+            "chapter 4",
+            "CH04"
+          ]
+        },
+        {
+          "id": "CH05",
+          "value": 5,
+          "aliases": [
+            "chương 5",
+            "chương 05",
+            "chapter 5",
+            "CH05"
+          ]
+        },
+        {
+          "id": "CH06",
+          "value": 6,
+          "aliases": [
+            "chương 6",
+            "chương 06",
+            "chapter 6",
+            "CH06"
+          ]
+        },
+        {
+          "id": "CH07",
+          "value": 7,
+          "aliases": [
+            "chương 7",
+            "chương 07",
+            "chapter 7",
+            "CH07"
+          ]
+        },
+        {
+          "id": "CH08",
+          "value": 8,
+          "aliases": [
+            "chương 8",
+            "chương 08",
+            "chapter 8",
+            "CH08"
+          ]
+        },
+        {
+          "id": "CH09",
+          "value": 9,
+          "aliases": [
+            "chương 9",
+            "chương 09",
+            "chapter 9",
+            "CH09"
+          ]
+        },
+        {
+          "id": "CH10",
+          "value": 10,
+          "aliases": [
+            "chương 10",
+            "chương 10",
+            "chapter 10",
+            "CH10"
+          ]
+        },
+        {
+          "id": "CH11",
+          "value": 11,
+          "aliases": [
+            "chương 11",
+            "chương 11",
+            "chapter 11",
+            "CH11"
+          ]
+        },
+        {
+          "id": "CH12",
+          "value": 12,
+          "aliases": [
+            "chương 12",
+            "chương 12",
+            "chapter 12",
+            "CH12"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_ASSIGNMENT",
+      "entity_type": "assignment",
+      "entries": [
+        {
+          "id": "BTL01",
+          "value": "BTL01",
+          "aliases": [
+            "bài tập lớn",
+            "BTL",
+            "BTL01",
+            "đồ án môn học",
+            "Course Assistant",
+            "Intelligent Course Assistant"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_PART",
+      "entity_type": "assignment_part",
+      "entries": [
+        {
+          "id": "PART_I",
+          "value": 1,
+          "aliases": [
+            "phần I",
+            "part I",
+            "phần 1"
+          ]
+        },
+        {
+          "id": "PART_II",
+          "value": 2,
+          "aliases": [
+            "phần II",
+            "part II",
+            "phần 2"
+          ]
+        },
+        {
+          "id": "PART_III",
+          "value": 3,
+          "aliases": [
+            "phần III",
+            "part III",
+            "phần 3"
+          ]
+        },
+        {
+          "id": "PART_IV",
+          "value": 4,
+          "aliases": [
+            "phần IV",
+            "part IV",
+            "phần 4"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_EXAM",
+      "entity_type": "exam",
+      "entries": [
+        {
+          "id": "MIDTERM",
+          "value": "MIDTERM",
+          "aliases": [
+            "midterm",
+            "thi giữa kỳ",
+            "bài thi giữa kỳ"
+          ]
+        },
+        {
+          "id": "FINAL",
+          "value": "FINAL",
+          "aliases": [
+            "final",
+            "thi cuối kỳ",
+            "bài thi cuối kỳ"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_LO",
+      "entity_type": "learning_outcome",
+      "entries": [
+        {
+          "id": "LO1",
+          "value": "LO1",
+          "aliases": [
+            "LO1",
+            "L.O.1"
+          ]
+        },
+        {
+          "id": "LO2",
+          "value": "LO2",
+          "aliases": [
+            "LO2",
+            "L.O.2"
+          ]
+        },
+        {
+          "id": "LO3",
+          "value": "LO3",
+          "aliases": [
+            "LO3",
+            "L.O.3"
+          ]
+        },
+        {
+          "id": "LO4",
+          "value": "LO4",
+          "aliases": [
+            "LO4",
+            "L.O.4"
+          ]
+        },
+        {
+          "id": "LO1.1",
+          "value": "LO1.1",
+          "aliases": [
+            "LO1.1",
+            "L.O.1.1"
+          ]
+        },
+        {
+          "id": "LO2.1",
+          "value": "LO2.1",
+          "aliases": [
+            "LO2.1",
+            "L.O.2.1"
+          ]
+        },
+        {
+          "id": "LO2.2",
+          "value": "LO2.2",
+          "aliases": [
+            "LO2.2",
+            "L.O.2.2"
+          ]
+        },
+        {
+          "id": "LO2.3",
+          "value": "LO2.3",
+          "aliases": [
+            "LO2.3",
+            "L.O.2.3"
+          ]
+        },
+        {
+          "id": "LO2.4",
+          "value": "LO2.4",
+          "aliases": [
+            "LO2.4",
+            "L.O.2.4"
+          ]
+        },
+        {
+          "id": "LO2.5",
+          "value": "LO2.5",
+          "aliases": [
+            "LO2.5",
+            "L.O.2.5"
+          ]
+        },
+        {
+          "id": "LO3.1",
+          "value": "LO3.1",
+          "aliases": [
+            "LO3.1",
+            "L.O.3.1"
+          ]
+        },
+        {
+          "id": "LO3.2",
+          "value": "LO3.2",
+          "aliases": [
+            "LO3.2",
+            "L.O.3.2"
+          ]
+        },
+        {
+          "id": "LO3.3",
+          "value": "LO3.3",
+          "aliases": [
+            "LO3.3",
+            "L.O.3.3"
+          ]
+        },
+        {
+          "id": "LO3.4",
+          "value": "LO3.4",
+          "aliases": [
+            "LO3.4",
+            "L.O.3.4"
+          ]
+        },
+        {
+          "id": "LO4.1",
+          "value": "LO4.1",
+          "aliases": [
+            "LO4.1",
+            "L.O.4.1"
+          ]
+        },
+        {
+          "id": "LO4.2",
+          "value": "LO4.2",
+          "aliases": [
+            "LO4.2",
+            "L.O.4.2"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_CONCEPT",
+      "entity_type": "concept",
+      "entries": [
+        {
+          "id": "CFG",
+          "value": "CFG",
+          "aliases": [
+            "CFG",
+            "context-free grammar",
+            "context free grammar",
+            "văn phạm phi ngữ cảnh",
+            "context-free grammar (CFG)",
+            "ngữ pháp phi ngữ cảnh (CFG)",
+            "văn phạm phi ngữ cảnh (CFG)"
+          ]
+        },
+        {
+          "id": "PCFG",
+          "value": "PCFG",
+          "aliases": [
+            "PCFG",
+            "probabilistic context-free grammar",
+            "văn phạm phi ngữ cảnh xác suất"
+          ]
+        },
+        {
+          "id": "PARSING",
+          "value": "PARSING",
+          "aliases": [
+            "parsing",
+            "phân tích cú pháp"
+          ]
+        },
+        {
+          "id": "PARSER",
+          "value": "PARSER",
+          "aliases": [
+            "parser",
+            "bộ phân tích cú pháp"
+          ]
+        },
+        {
+          "id": "TOP_DOWN_PARSER",
+          "value": "TOP_DOWN_PARSER",
+          "aliases": [
+            "top-down parser",
+            "top down parser",
+            "phân tích cú pháp từ trên xuống"
+          ]
+        },
+        {
+          "id": "BOTTOM_UP_CHART_PARSER",
+          "value": "BOTTOM_UP_CHART_PARSER",
+          "aliases": [
+            "bottom-up chart parser",
+            "bottom up chart parser",
+            "phân tích cú pháp từ dưới lên"
+          ]
+        },
+        {
+          "id": "TOP_DOWN_CHART_PARSER",
+          "value": "TOP_DOWN_CHART_PARSER",
+          "aliases": [
+            "top-down chart parser",
+            "top down chart parser"
+          ]
+        },
+        {
+          "id": "EARLEY",
+          "value": "EARLEY",
+          "aliases": [
+            "Earley",
+            "Earley parser"
+          ]
+        },
+        {
+          "id": "CYK",
+          "value": "CYK",
+          "aliases": [
+            "CYK",
+            "CYK parser"
+          ]
+        },
+        {
+          "id": "DEPENDENCY_GRAMMAR",
+          "value": "DEPENDENCY_GRAMMAR",
+          "aliases": [
+            "dependency grammar",
+            "văn phạm phụ thuộc",
+            "dependency parsing",
+            "ngữ pháp phụ thuộc (Dependency Grammar)",
+            "phân tích cú pháp phụ thuộc"
+          ]
+        },
+        {
+          "id": "STANFORD_DEPENDENCIES",
+          "value": "STANFORD_DEPENDENCIES",
+          "aliases": [
+            "Stanford Dependencies"
+          ]
+        },
+        {
+          "id": "FEATURES",
+          "value": "FEATURES",
+          "aliases": [
+            "features",
+            "feature",
+            "nét"
+          ]
+        },
+        {
+          "id": "AUGMENTED_GRAMMAR",
+          "value": "AUGMENTED_GRAMMAR",
+          "aliases": [
+            "augmented grammar",
+            "văn phạm gia tố"
+          ]
+        },
+        {
+          "id": "LEXICON",
+          "value": "LEXICON",
+          "aliases": [
+            "lexicon",
+            "từ vựng"
+          ]
+        },
+        {
+          "id": "UNIFICATION",
+          "value": "UNIFICATION",
+          "aliases": [
+            "unification",
+            "hợp nhất"
+          ]
+        },
+        {
+          "id": "AUGMENTED_TRANSITION_NETWORK",
+          "value": "AUGMENTED_TRANSITION_NETWORK",
+          "aliases": [
+            "augmented transition networks",
+            "ATN"
+          ]
+        },
+        {
+          "id": "POS_TAGGING",
+          "value": "POS_TAGGING",
+          "aliases": [
+            "POS tagging",
+            "part-of-speech tagging",
+            "gán nhãn từ loại",
+            "gán nhãn từ loại (POS Tagging)",
+            "POS Tagging"
+          ]
+        },
+        {
+          "id": "PROBABILITY",
+          "value": "PROBABILITY",
+          "aliases": [
+            "probability",
+            "lý thuyết xác suất"
+          ]
+        },
+        {
+          "id": "BEST_FIRST_PARSING",
+          "value": "BEST_FIRST_PARSING",
+          "aliases": [
+            "best-first parsing",
+            "best first parsing"
+          ]
+        },
+        {
+          "id": "LOGICAL_FORM",
+          "value": "LOGICAL_FORM",
+          "aliases": [
+            "logical form",
+            "dạng luận lý",
+            "dạng logic (Logical Form)",
+            "dạng logic"
+          ]
+        },
+        {
+          "id": "THEMATIC_ROLES",
+          "value": "THEMATIC_ROLES",
+          "aliases": [
+            "thematic roles",
+            "thematic role",
+            "vai trò chủ đề",
+            "các vai trò ngữ nghĩa (Thematic roles)",
+            "vai trò ngữ nghĩa (Thematic roles)"
+          ]
+        },
+        {
+          "id": "SEMANTICS",
+          "value": "SEMANTICS",
+          "aliases": [
+            "semantics",
+            "ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "SPEECH_ACT",
+          "value": "SPEECH_ACT",
+          "aliases": [
+            "speech act",
+            "hành vi ngôn ngữ",
+            "các toán tử hành vi ngôn từ (Speech Acts)",
+            "toán tử hành vi ngôn từ",
+            "speech acts"
+          ]
+        },
+        {
+          "id": "COMPOSITIONALITY",
+          "value": "COMPOSITIONALITY",
+          "aliases": [
+            "compositionality",
+            "tính hợp thành"
+          ]
+        },
+        {
+          "id": "SEMANTIC_INTERPRETATION",
+          "value": "SEMANTIC_INTERPRETATION",
+          "aliases": [
+            "semantic interpretation",
+            "diễn dịch ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "SEMANTIC_ROLE",
+          "value": "SEMANTIC_ROLE",
+          "aliases": [
+            "semantic role",
+            "vai trò ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "SELECTIONAL_RESTRICTION",
+          "value": "SELECTIONAL_RESTRICTION",
+          "aliases": [
+            "selectional restriction",
+            "giới hạn lựa chọn",
+            "ràng buộc chọn lựa (Selectional Restrictions)",
+            "selectional restrictions",
+            "ràng buộc chọn lựa"
+          ]
+        },
+        {
+          "id": "SEMANTIC_NETWORK",
+          "value": "SEMANTIC_NETWORK",
+          "aliases": [
+            "semantic network",
+            "mạng ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "WSD",
+          "value": "WSD",
+          "aliases": [
+            "WSD",
+            "word sense disambiguation",
+            "khử nhập nhằng nghĩa từ"
+          ]
+        },
+        {
+          "id": "SEMANTIC_GRAMMAR",
+          "value": "SEMANTIC_GRAMMAR",
+          "aliases": [
+            "semantic grammar",
+            "văn phạm ngữ nghĩa",
+            "ngữ pháp ngữ nghĩa (Semantic Grammars)",
+            "semantic grammars",
+            "ngữ pháp ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "GRAMMATICAL_RELATIONS",
+          "value": "GRAMMATICAL_RELATIONS",
+          "aliases": [
+            "grammatical relations",
+            "quan hệ văn phạm"
+          ]
+        },
+        {
+          "id": "TEMPLATE_MATCHING",
+          "value": "TEMPLATE_MATCHING",
+          "aliases": [
+            "template matching",
+            "đối sánh mẫu"
+          ]
+        },
+        {
+          "id": "KNOWLEDGE_REPRESENTATION",
+          "value": "KNOWLEDGE_REPRESENTATION",
+          "aliases": [
+            "knowledge representation",
+            "biểu diễn tri thức"
+          ]
+        },
+        {
+          "id": "REASONING",
+          "value": "REASONING",
+          "aliases": [
+            "reasoning",
+            "suy diễn"
+          ]
+        },
+        {
+          "id": "FRAME",
+          "value": "FRAME",
+          "aliases": [
+            "frame",
+            "frames",
+            "khung"
+          ]
+        },
+        {
+          "id": "PROCEDURAL_SEMANTICS",
+          "value": "PROCEDURAL_SEMANTICS",
+          "aliases": [
+            "procedural semantics",
+            "ngữ nghĩa thủ tục"
+          ]
+        },
+        {
+          "id": "QUESTION_ANSWERING",
+          "value": "QUESTION_ANSWERING",
+          "aliases": [
+            "question answering",
+            "hỏi đáp",
+            "QA"
+          ]
+        },
+        {
+          "id": "LOCAL_DISCOURSE_CONTEXT",
+          "value": "LOCAL_DISCOURSE_CONTEXT",
+          "aliases": [
+            "local discourse context",
+            "ngữ cảnh diễn ngôn cục bộ"
+          ]
+        },
+        {
+          "id": "REFERENCE",
+          "value": "REFERENCE",
+          "aliases": [
+            "reference",
+            "tham chiếu"
+          ]
+        },
+        {
+          "id": "ANAPHORA",
+          "value": "ANAPHORA",
+          "aliases": [
+            "anaphora",
+            "đồng tham chiếu",
+            "quan hệ quy chiếu"
+          ]
+        },
+        {
+          "id": "PRONOUN",
+          "value": "PRONOUN",
+          "aliases": [
+            "pronoun",
+            "đại từ"
+          ]
+        },
+        {
+          "id": "CENTERING",
+          "value": "CENTERING",
+          "aliases": [
+            "centering",
+            "xác định tâm"
+          ]
+        },
+        {
+          "id": "DEFINITE_DESCRIPTION",
+          "value": "DEFINITE_DESCRIPTION",
+          "aliases": [
+            "definite descriptions",
+            "mô tả xác định"
+          ]
+        },
+        {
+          "id": "ELLIPSIS",
+          "value": "ELLIPSIS",
+          "aliases": [
+            "ellipsis",
+            "tỉnh lược"
+          ]
+        },
+        {
+          "id": "SURFACE_ANAPHORA",
+          "value": "SURFACE_ANAPHORA",
+          "aliases": [
+            "surface anaphora"
+          ]
+        },
+        {
+          "id": "SYNTAX",
+          "value": "SYNTAX",
+          "aliases": [
+            "syntax",
+            "cú pháp",
+            "cấu trúc cú pháp (Syntax)"
+          ]
+        },
+        {
+          "id": "NOUN_PHRASE",
+          "value": "NOUN_PHRASE",
+          "aliases": [
+            "noun phrase",
+            "cụm danh từ"
+          ]
+        },
+        {
+          "id": "VERB_PHRASE",
+          "value": "VERB_PHRASE",
+          "aliases": [
+            "verb phrase",
+            "cụm động từ"
+          ]
+        },
+        {
+          "id": "AUXILIARY",
+          "value": "AUXILIARY",
+          "aliases": [
+            "auxiliary verbs",
+            "trợ động từ"
+          ]
+        },
+        {
+          "id": "RELATIVE_CLAUSE",
+          "value": "RELATIVE_CLAUSE",
+          "aliases": [
+            "relative clause",
+            "mệnh đề quan hệ"
+          ]
+        },
+        {
+          "id": "NLU",
+          "value": "NLU",
+          "aliases": [
+            "NLU",
+            "natural language understanding",
+            "hiểu ngôn ngữ tự nhiên (NLU)"
+          ]
+        },
+        {
+          "id": "RAG",
+          "value": "RAG",
+          "aliases": [
+            "RAG",
+            "retrieval-augmented generation"
+          ]
+        },
+        {
+          "id": "LLM",
+          "value": "LLM",
+          "aliases": [
+            "LLM",
+            "large language model",
+            "mô hình ngôn ngữ lớn"
+          ]
+        },
+        {
+          "id": "DEPENDENCY_PARSER",
+          "value": "DEPENDENCY_PARSER",
+          "aliases": [
+            "dependency parser",
+            "bộ phân tích cú pháp phụ thuộc"
+          ]
+        },
+        {
+          "id": "VITERBI",
+          "value": "VITERBI",
+          "aliases": [
+            "viterbi",
+            "thuật toán viterbi"
+          ]
+        },
+        {
+          "id": "HMM",
+          "value": "HMM",
+          "aliases": [
+            "HMM",
+            "Hidden Markov Model",
+            "Hidden Markov Models",
+            "mô hình Markov ẩn"
+          ]
+        },
+        {
+          "id": "CRF",
+          "value": "CRF",
+          "aliases": [
+            "CRF",
+            "CRFs",
+            "Conditional Random Field",
+            "Conditional Random Fields",
+            "Conditional Random Fields (CRFs)",
+            "trường ngẫu nhiên điều kiện"
+          ]
+        },
+        {
+          "id": "MLE",
+          "value": "MLE",
+          "aliases": [
+            "MLE",
+            "maximum likelihood estimation",
+            "ước lượng xác suất cực đại",
+            "ước lượng xác suất cực đại (MLE)"
+          ]
+        },
+        {
+          "id": "ELE",
+          "value": "ELE",
+          "aliases": [
+            "ELE",
+            "expected likelihood estimate",
+            "ước lượng xác suất kỳ vọng"
+          ]
+        },
+        {
+          "id": "PMI",
+          "value": "PMI",
+          "aliases": [
+            "PMI",
+            "mutual information",
+            "Mutual Information (PMI)",
+            "pointwise mutual information",
+            "thông tin tương hỗ điểm"
+          ]
+        },
+        {
+          "id": "PPMI",
+          "value": "PPMI",
+          "aliases": [
+            "PPMI",
+            "positive pointwise mutual information",
+            "thông tin tương hỗ điểm dương"
+          ]
+        },
+        {
+          "id": "UAS",
+          "value": "UAS",
+          "aliases": [
+            "UAS",
+            "unlabeled attachment score"
+          ]
+        },
+        {
+          "id": "LAS",
+          "value": "LAS",
+          "aliases": [
+            "LAS",
+            "labeled attachment score"
+          ]
+        },
+        {
+          "id": "NER",
+          "value": "NER",
+          "aliases": [
+            "NER",
+            "named entity recognition",
+            "nhận dạng thực thể tên"
+          ]
+        },
+        {
+          "id": "IE",
+          "value": "IE",
+          "aliases": [
+            "IE",
+            "information extraction",
+            "trích xuất thông tin"
+          ]
+        },
+        {
+          "id": "IR",
+          "value": "IR",
+          "aliases": [
+            "IR",
+            "information retrieval",
+            "truy xuất thông tin",
+            "truy vấn thông tin"
+          ]
+        },
+        {
+          "id": "MT",
+          "value": "MT",
+          "aliases": [
+            "MT",
+            "machine translation",
+            "dịch máy"
+          ]
+        },
+        {
+          "id": "FOPC",
+          "value": "FOPC",
+          "aliases": [
+            "FOPC",
+            "first order predicate calculus",
+            "phép tính vị từ bậc nhất"
+          ]
+        },
+        {
+          "id": "GAP",
+          "value": "GAP",
+          "aliases": [
+            "GAP",
+            "thuộc tính GAP",
+            "khoảng khuyết"
+          ]
+        },
+        {
+          "id": "MARGIN_ERROR",
+          "value": "MARGIN_ERROR",
+          "aliases": [
+            "margin error",
+            "sai số ước lượng"
+          ]
+        },
+        {
+          "id": "BLACK_BOX",
+          "value": "BLACK_BOX",
+          "aliases": [
+            "black box",
+            "black-box",
+            "đánh giá black box"
+          ]
+        },
+        {
+          "id": "GLASS_BOX",
+          "value": "GLASS_BOX",
+          "aliases": [
+            "glass box",
+            "glass-box",
+            "đánh giá glass box"
+          ]
+        },
+        {
+          "id": "GENERALITY",
+          "value": "GENERALITY",
+          "aliases": [
+            "generality",
+            "tính tổng quát"
+          ]
+        },
+        {
+          "id": "SELECTIVITY",
+          "value": "SELECTIVITY",
+          "aliases": [
+            "selectivity",
+            "tính chọn lọc"
+          ]
+        },
+        {
+          "id": "UNDERSTANDABILITY",
+          "value": "UNDERSTANDABILITY",
+          "aliases": [
+            "understandability",
+            "tính dễ hiểu"
+          ]
+        },
+        {
+          "id": "SUBJECT_AUX_INVERSION",
+          "value": "SUBJECT_AUX_INVERSION",
+          "aliases": [
+            "subject-aux inversion",
+            "đảo trợ động từ và chủ ngữ"
+          ]
+        },
+        {
+          "id": "UNBOUNDED_MOVEMENT",
+          "value": "UNBOUNDED_MOVEMENT",
+          "aliases": [
+            "unbounded movement",
+            "di chuyển không giới hạn"
+          ]
+        },
+        {
+          "id": "WH_QUESTION",
+          "value": "WH_QUESTION",
+          "aliases": [
+            "Wh-question",
+            "Wh-questions",
+            "câu hỏi Wh",
+            "câu hỏi Wh-question"
+          ]
+        },
+        {
+          "id": "GENERAL_KNOWLEDGE",
+          "value": "GENERAL_KNOWLEDGE",
+          "aliases": [
+            "general knowledge",
+            "kiến thức chung",
+            "tri thức chung"
+          ]
+        },
+        {
+          "id": "SPECIFIC_KNOWLEDGE",
+          "value": "SPECIFIC_KNOWLEDGE",
+          "aliases": [
+            "specific knowledge",
+            "kiến thức cụ thể",
+            "tri thức cụ thể"
+          ]
+        },
+        {
+          "id": "DEDUCTIVE",
+          "value": "DEDUCTIVE",
+          "aliases": [
+            "suy luận diễn dịch (Deductive)",
+            "suy luận diễn dịch",
+            "deductive"
+          ]
+        },
+        {
+          "id": "NON_DEDUCTIVE",
+          "value": "NON_DEDUCTIVE",
+          "aliases": [
+            "suy luận không diễn dịch (Non-deductive)",
+            "suy luận không diễn dịch",
+            "non-deductive"
+          ]
+        },
+        {
+          "id": "REICHENBACH",
+          "value": "REICHENBACH",
+          "aliases": [
+            "Reichenbach",
+            "lý thuyết Reichenbach"
+          ]
+        },
+        {
+          "id": "SPEECH_TIME",
+          "value": "SPEECH_TIME",
+          "aliases": [
+            "S (speech)",
+            "speech time",
+            "thời gian phát ngôn"
+          ]
+        },
+        {
+          "id": "EVENT_TIME",
+          "value": "EVENT_TIME",
+          "aliases": [
+            "E (event)",
+            "event time",
+            "thời gian sự kiện"
+          ]
+        },
+        {
+          "id": "REFERENCE_TIME",
+          "value": "REFERENCE_TIME",
+          "aliases": [
+            "R (reference)",
+            "reference time",
+            "thời gian tham chiếu"
+          ]
+        },
+        {
+          "id": "DATABASE_QUERY",
+          "value": "DATABASE_QUERY",
+          "aliases": [
+            "truy vấn cơ sở dữ liệu",
+            "truy vấn dữ liệu"
+          ]
+        },
+        {
+          "id": "AGENT",
+          "value": "AGENT",
+          "aliases": [
+            "AGENT",
+            "vai trò AGENT"
+          ]
+        },
+        {
+          "id": "THEME",
+          "value": "THEME",
+          "aliases": [
+            "THEME",
+            "vai trò THEME"
+          ]
+        },
+        {
+          "id": "TO_LOC",
+          "value": "TO_LOC",
+          "aliases": [
+            "TO-LOC",
+            "vai trò TO-LOC"
+          ]
+        },
+        {
+          "id": "AT_TIME",
+          "value": "AT_TIME",
+          "aliases": [
+            "AT-TIME",
+            "vai trò AT-TIME"
+          ]
+        },
+        {
+          "id": "ASSERT",
+          "value": "ASSERT",
+          "aliases": [
+            "ASSERT"
+          ]
+        },
+        {
+          "id": "YN_QUERY",
+          "value": "YN_QUERY",
+          "aliases": [
+            "Y/N-QUERY"
+          ]
+        },
+        {
+          "id": "COMMAND",
+          "value": "COMMAND",
+          "aliases": [
+            "COMMAND"
+          ]
+        },
+        {
+          "id": "WH_QUERY",
+          "value": "WH_QUERY",
+          "aliases": [
+            "WH-QUERY"
+          ]
+        },
+        {
+          "id": "LOCAL_CHAINING",
+          "value": "LOCAL_CHAINING",
+          "aliases": [
+            "local chaining",
+            "mô hình local chaining"
+          ]
+        },
+        {
+          "id": "TERM_DOCUMENT",
+          "value": "TERM_DOCUMENT",
+          "aliases": [
+            "Term-Document",
+            "ma trận Term-Document"
+          ]
+        },
+        {
+          "id": "TERM_CONTEXT",
+          "value": "TERM_CONTEXT",
+          "aliases": [
+            "Term-Context",
+            "ma trận Term-Context"
+          ]
+        },
+        {
+          "id": "VECTOR_SPACE",
+          "value": "VECTOR_SPACE",
+          "aliases": [
+            "không gian vectơ (Vector-space models)",
+            "vector-space models",
+            "không gian vectơ",
+            "mô hình không gian vectơ"
+          ]
+        },
+        {
+          "id": "PENN_TREEBANK",
+          "value": "PENN_TREEBANK",
+          "aliases": [
+            "Penn Treebank POS Tagset",
+            "Penn Treebank",
+            "bảng nhãn Penn Treebank"
+          ]
+        },
+        {
+          "id": "LAMBDA_REDUCTION",
+          "value": "LAMBDA_REDUCTION",
+          "aliases": [
+            "thu gọn lambda",
+            "phép thu gọn lambda",
+            "lambda reduction",
+            "thu gọn lambda (lambda reduction)"
+          ]
+        },
+        {
+          "id": "SEMANTIC_PARSE_TREE",
+          "value": "SEMANTIC_PARSE_TREE",
+          "aliases": [
+            "cây phân tích cú pháp ngữ nghĩa",
+            "cây cú pháp ngữ nghĩa"
+          ]
+        },
+        {
+          "id": "LOGIC_REPRESENTATION",
+          "value": "LOGIC_REPRESENTATION",
+          "aliases": [
+            "biểu diễn ngữ nghĩa dạng logic",
+            "biểu diễn dạng logic"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_RESOURCE_TOPIC",
+      "entity_type": "resource_topic",
+      "entries": [
+        {
+          "id": "STATISTICAL_NLP",
+          "value": "STATISTICAL_NLP",
+          "aliases": [
+            "statistical NLP",
+            "NLP thống kê"
+          ]
+        },
+        {
+          "id": "PYTHON_NLP",
+          "value": "PYTHON_NLP",
+          "aliases": [
+            "Python NLP",
+            "xử lý ngôn ngữ tự nhiên với Python"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_RULE_TOPIC",
+      "entity_type": "rule_topic",
+      "entries": [
+        {
+          "id": "AI_USAGE",
+          "value": "AI_USAGE",
+          "aliases": [
+            "sử dụng AI",
+            "AI",
+            "công cụ AI",
+            "sử dụng công cụ AI"
+          ]
+        },
+        {
+          "id": "LLM_RAG",
+          "value": "LLM_RAG",
+          "aliases": [
+            "LLM/RAG",
+            "LLM",
+            "RAG"
+          ]
+        },
+        {
+          "id": "PLAGIARISM",
+          "value": "PLAGIARISM",
+          "aliases": [
+            "đạo văn",
+            "sao chép bài"
+          ]
+        },
+        {
+          "id": "ATTENDANCE",
+          "value": "ATTENDANCE",
+          "aliases": [
+            "chuyên cần",
+            "điểm danh"
+          ]
+        },
+        {
+          "id": "LATE_SUBMISSION",
+          "value": "LATE_SUBMISSION",
+          "aliases": [
+            "nộp trễ",
+            "nộp bài trễ"
+          ]
+        },
+        {
+          "id": "TEAMWORK",
+          "value": "TEAMWORK",
+          "aliases": [
+            "làm việc nhóm",
+            "số lượng thành viên"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_REFERENCE",
+      "entity_type": "reference",
+      "entries": [
+        {
+          "id": "LAST_TOPIC",
+          "value": "LAST_TOPIC",
+          "aliases": [
+            "phần này",
+            "nội dung này",
+            "nó",
+            "chủ đề đó",
+            "thuật toán này",
+            "mô hình đó",
+            "phương pháp này"
+          ]
+        },
+        {
+          "id": "LAST_CHAPTER",
+          "value": "LAST_CHAPTER",
+          "aliases": [
+            "chương này",
+            "chương đó"
+          ]
+        },
+        {
+          "id": "LAST_ASSIGNMENT",
+          "value": "LAST_ASSIGNMENT",
+          "aliases": [
+            "bài tập này",
+            "bài tập đó"
+          ]
+        },
+        {
+          "id": "LAST_ASSIGNMENT_PART",
+          "value": "LAST_ASSIGNMENT_PART",
+          "aliases": [
+            "phần đó"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_TOOL_RULE",
+      "entity_type": "rule_topic",
+      "entries": [
+        {
+          "id": "AI_USAGE",
+          "value": "AI_USAGE",
+          "aliases": [
+            "AI",
+            "công cụ AI"
+          ]
+        },
+        {
+          "id": "LLM_RAG",
+          "value": "LLM_RAG",
+          "aliases": [
+            "LLM/RAG",
+            "LLM",
+            "RAG"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "E_CHAPTER_ASSIGNMENT",
+      "entity_type": "chapter_assignment",
+      "entries": [
+        {
+          "id": "ASSIGNMENT_CH03",
+          "value": "ASSIGNMENT_CH03",
+          "aliases": [
+            "bài tập chương 3",
+            "bài tập Chương 03"
+          ]
+        },
+        {
+          "id": "ASSIGNMENT_CH08",
+          "value": "ASSIGNMENT_CH08",
+          "aliases": [
+            "bài tập chương 8",
+            "bài tập Chương 08"
+          ]
+        },
+        {
+          "id": "ASSIGNMENT_CH10",
+          "value": "ASSIGNMENT_CH10",
+          "aliases": [
+            "bài tập chương 10",
+            "bài tập Chương 10"
+          ]
+        },
+        {
+          "id": "ASSIGNMENT_CH11",
+          "value": "ASSIGNMENT_CH11",
+          "aliases": [
+            "bài tập chương 11",
+            "bài tập Chương 11"
+          ]
+        }
+      ]
+    }
+  ]
+}

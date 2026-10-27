@@ -1,0 +1,47 @@
+---
+id: "slide_ch04_feature_grammar"
+chapter: 4
+title: "Feature Systems and Augmented Grammar"
+keywords: ["feature", "augmented grammar", "NUMBER"]
+content_vi: |-
+  Augmented Grammar mô tả syntactic constituents bằng feature structures thay vì chỉ dùng category names như NP hoặc V. Feature NUMBER phân biệt singular và plural. Các feature constraints mô tả agreement giữa article với noun hoặc giữa subject với verb. Feature variables cho phép các constituents chia sẻ cùng một value trong production.
+
+---
+id: "slide_ch04_agreement"
+chapter: 4
+title: "Agreement Feature (AGR)"
+keywords: ["AGR", "person", "number", "agreement"]
+content_vi: |-
+  Agreement có thể phụ thuộc vào person và number. Feature AGR kết hợp hai thuộc tính này với các values 1s, 2s, 3s, 1p, 2p và 3p. Chữ số biểu thị person, còn s và p biểu thị singular và plural. Grammar productions có thể yêu cầu các constituents liên quan mang AGR values tương thích.
+
+---
+id: "slide_ch04_vform_subcat"
+chapter: 4
+title: "Verb Form (VFORM) and Subcategorization (SUBCAT)"
+keywords: ["VFORM", "SUBCAT", "complement"]
+content_vi: |-
+  VFORM mô tả verb form như base, present, past, present participle, past participle hoặc infinitive có to. SUBCAT mô tả complement forms mà verb nhận. Laugh có thể không có object, take nhận một NP, còn give nhận hai NP trong cấu trúc tương ứng. Want có thể nhận infinitival VP; tell có thể nhận NP rồi infinitival VP.
+
+---
+id: "slide_ch04_binary_defaults"
+chapter: 4
+title: "Binary Features and Default Values"
+keywords: ["binary feature", "INV", "default"]
+content_vi: |-
+  Binary feature nhận value + hoặc −. INV biểu thị subject inversion: Jack laughed mang −INV, còn Did Jack laugh mang +INV. Khi tạo constituent, một feature chưa được chỉ định value có thể nhận default value. Cơ chế default giúp tránh khai báo lặp lại mọi feature value trong từng production.
+
+---
+id: "slide_ch04_lexicon_heads"
+chapter: 4
+title: "Lexicon and Head Features"
+keywords: ["lexicon", "head feature", "ROOT", "AGR", "VFORM"]
+content_vi: |-
+  Một word form có thể có nhiều lexical entries với các features khác nhau. Saw có thể là noun hoặc những verb forms gắn với ROOT và SUBCAT khác nhau. Với head features, mother constituent chia sẻ một số values với head constituent, chẳng hạn AGR hoặc VFORM. Khai báo head features riêng giúp rút gọn grammar productions.
+
+---
+id: "slide_ch04_feature_parsing"
+chapter: 4
+title: "Parsing with Features"
+keywords: ["chart", "feature matching", "variable binding"]
+content_vi: |-
+  Trong Chart Parsing với augmented grammar, category names phù hợp chưa đủ để kết hợp hai constituents. Parser cần tìm variable bindings làm các features của expected constituent tương thích với constituent tìm được. Sau đó, parser sao chép arc, áp dụng instantiations và cập nhật chart. Với a dog, NP được hoàn thành khi AGR của article và noun khớp nhau.

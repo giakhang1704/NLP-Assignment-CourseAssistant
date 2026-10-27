@@ -1,0 +1,260 @@
+{
+  "version": 2,
+  "queries": {
+    "QUERY_GET_COURSE_INFO": {
+      "intent": "GET_COURSE_INFO"
+    },
+    "QUERY_GET_TOPIC": {
+      "intent": "GET_TOPIC"
+    },
+    "QUERY_GET_SCHEDULE": {
+      "intent": "GET_SCHEDULE"
+    },
+    "QUERY_GET_ASSIGNMENT": {
+      "intent": "GET_ASSIGNMENT"
+    },
+    "QUERY_GET_DEADLINE": {
+      "intent": "GET_DEADLINE"
+    },
+    "QUERY_GET_RESOURCE": {
+      "intent": "GET_RESOURCE"
+    },
+    "QUERY_GET_RULE": {
+      "intent": "GET_RULE"
+    },
+    "QUERY_GET_INSTRUCTOR": {
+      "intent": "GET_INSTRUCTOR"
+    },
+    "QUERY_GET_LO": {
+      "intent": "GET_LO"
+    },
+    "QUERY_ASSIGNMENT_PARSER": {
+      "intent": "GET_ASSIGNMENT",
+      "implicit_entities": [
+        {
+          "type": "assignment_part",
+          "id": "PART_I",
+          "value": 1
+        }
+      ]
+    },
+    "QUERY_ASSIGNMENT_QA": {
+      "intent": "GET_ASSIGNMENT",
+      "implicit_entities": [
+        {
+          "type": "assignment_part",
+          "id": "PART_II",
+          "value": 2
+        }
+      ]
+    },
+    "QUERY_DEFINITION": {
+      "intent": "DEFINITION_QUERY",
+      "question_type": "definition",
+      "operation": "get_topic"
+    },
+    "QUERY_PROCESS": {
+      "intent": "PROCESS_QUERY",
+      "question_type": "process",
+      "operation": "get_topic"
+    },
+    "QUERY_COMPARISON": {
+      "intent": "COMPARISON_QUERY",
+      "question_type": "comparison",
+      "operation": "get_topic"
+    },
+    "QUERY_CONTEXT": {
+      "intent": "CONTEXT_DEPENDENT",
+      "needs_context": true
+    },
+    "QUERY_RULE_AI": {
+      "intent": "GET_RULE",
+      "implicit_entities": [
+        {
+          "type": "rule_topic",
+          "id": "AI_USAGE",
+          "value": "AI_USAGE"
+        }
+      ]
+    },
+    "QUERY_RULE_LLM": {
+      "intent": "GET_RULE",
+      "implicit_entities": [
+        {
+          "type": "rule_topic",
+          "id": "LLM_RAG",
+          "value": "LLM_RAG"
+        }
+      ]
+    },
+    "QUERY_COURSE_CHAPTER_COUNT": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "chapter_count",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_CREDITS": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "credits",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_CODE": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "course_id",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_NAME": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "course_name",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_DEPARTMENT": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "department",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_HOURS": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "total_course_hours",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_DURATION": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "duration_weeks",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_ASSESSMENT": {
+      "intent": "GET_COURSE_INFO",
+      "question_type": "factual",
+      "attribute": "assessment",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_COURSE_OBJECTIVE": {
+      "intent": "GET_LO",
+      "question_type": "explanation",
+      "attribute": "objective",
+      "operation": "get_course_attribute"
+    },
+    "QUERY_CHAPTER_EXERCISE": {
+      "intent": "GET_ASSIGNMENT",
+      "question_type": "requirements",
+      "operation": "get_chapter_exercises"
+    },
+    "QUERY_CHAPTER_TASK": {
+      "intent": "GET_ASSIGNMENT",
+      "question_type": "requirements",
+      "operation": "get_chapter_exercises"
+    },
+    "QUERY_CHAPTER_TOOL": {
+      "intent": "GET_ASSIGNMENT",
+      "question_type": "requirements",
+      "operation": "get_chapter_exercises"
+    },
+    "QUERY_CONTEXT_COMPARE": {
+      "intent": "CONTEXT_DEPENDENT",
+      "needs_context": true,
+      "question_type": "comparison",
+      "operation": "compare_topics"
+    },
+    "QUERY_CONTEXT_DETAIL": {
+      "intent": "CONTEXT_DEPENDENT",
+      "needs_context": true,
+      "question_type": "explanation",
+      "operation": "explain_topic"
+    },
+    "QUERY_CONTEXT_EXERCISE": {
+      "intent": "CONTEXT_DEPENDENT",
+      "needs_context": true,
+      "question_type": "requirements",
+      "operation": "get_chapter_exercises"
+    },
+    "QUERY_CONTEXT_REQUIREMENTS": {
+      "intent": "CONTEXT_DEPENDENT",
+      "needs_context": true,
+      "question_type": "requirements",
+      "operation": "get_assignment_requirements"
+    },
+    "QUERY_RESOURCE_PROVIDED": {
+      "intent": "GET_RESOURCE",
+      "question_type": "list",
+      "operation": "get_resources"
+    },
+    "QUERY_RULE_SLIDES": {
+      "intent": "GET_RULE",
+      "question_type": "requirements",
+      "operation": "get_rules"
+    },
+    "QUERY_TOPIC_ADVANTAGE": {
+      "intent": "GET_TOPIC",
+      "question_type": "comparison",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_APPLICATIONS": {
+      "intent": "GET_TOPIC",
+      "question_type": "list",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_CHARACTERISTIC": {
+      "intent": "GET_TOPIC",
+      "question_type": "explanation",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_CRITERIA": {
+      "intent": "GET_TOPIC",
+      "question_type": "explanation",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_DEFINE_CONTEXT": {
+      "intent": "GET_TOPIC",
+      "question_type": "definition",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_DOMAIN": {
+      "intent": "GET_TOPIC",
+      "question_type": "explanation",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_FORMULA": {
+      "intent": "GET_TOPIC",
+      "question_type": "formula",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_KNOWLEDGE": {
+      "intent": "GET_TOPIC",
+      "question_type": "comparison",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_PROCESS": {
+      "intent": "GET_TOPIC",
+      "question_type": "process",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_ROLES": {
+      "intent": "GET_TOPIC",
+      "question_type": "definition",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_SLIDE": {
+      "intent": "GET_TOPIC",
+      "question_type": "location",
+      "operation": "locate_slide"
+    },
+    "QUERY_TOPIC_TAGSET": {
+      "intent": "GET_TOPIC",
+      "question_type": "list",
+      "operation": "get_topic"
+    },
+    "QUERY_TOPIC_TIME": {
+      "intent": "GET_TOPIC",
+      "question_type": "explanation",
+      "operation": "get_topic"
+    }
+  },
+  "notes": "Legacy parser intent names preserved. Semantic layer maps DEFINITION_QUERY/PROCESS_QUERY/COMPARISON_QUERY to GET_TOPIC with question_type. Current evaluation Q35 is standalone slide-location despite source CONTEXT_DEPENDENT label."
+}

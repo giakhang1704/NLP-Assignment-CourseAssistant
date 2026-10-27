@@ -1,0 +1,1238 @@
+{
+  "schema_version": 1,
+  "description": "Bản biên soạn chọn lọc từ chữ trong slide. Các dòng lần lượt gồm chapter, key, title, source_refs, keywords, content_vi. Với chương 4, source_refs là chỉ số khối chữ (0-based), không phải số slide.",
+  "items": [
+    [
+      1,
+      "language_study",
+      "Natural Language and Computational Linguistics",
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        "NLP",
+        "NLU",
+        "computational linguistics",
+        "linguistics"
+      ],
+      "Natural Language được nghiên cứu trong Linguistics, Psycholinguistics, Philosophy và Computational Linguistics. Linguistics xem xét cấu trúc ngôn ngữ, cách các từ tạo thành câu và các cách hiểu mà câu cho phép. Psycholinguistics nghiên cứu quá trình con người tạo và hiểu ngôn ngữ, còn Philosophy xem xét ý nghĩa, sự quy chiếu và quan hệ giữa ngôn ngữ với nhận thức. Computational Linguistics xây dựng mô hình ngôn ngữ bằng thuật toán và cấu trúc dữ liệu, kết hợp hiểu biết từ những lĩnh vực này. Môn học hướng đến xây dựng các mô hình Natural Language Understanding có thể triển khai trong những domain cụ thể."
+    ],
+    [
+      1,
+      "applications",
+      "Natural Language Understanding Applications",
+      [
+        4,
+        49
+      ],
+      [
+        "NLU applications",
+        "text-based",
+        "dialogue-based",
+        "NLP applications"
+      ],
+      "Natural Language Understanding có hai nhóm ứng dụng chính: text-based applications và dialogue-based applications. Text-based applications gồm Information Retrieval, Information Extraction, Machine Translation, Summarization và Question Answering. Dialogue-based applications gồm hệ thống hỏi đáp, chăm sóc khách hàng qua điện thoại, tutoring systems, điều khiển máy bằng lời nói và hợp tác giải quyết vấn đề. Dialogue systems cần chủ động tham gia để duy trì cuộc trao đổi tự nhiên và trôi chảy."
+    ],
+    [
+      1,
+      "information_extraction",
+      "Information Extraction (IE)",
+      [
+        5,
+        6
+      ],
+      [
+        "information extraction",
+        "IE",
+        "structured representation",
+        "knowledge base"
+      ],
+      "Information Extraction tìm và hiểu những phần thông tin liên quan trong văn bản, có thể tập hợp thông tin từ nhiều đoạn. Đầu ra là structured representation, chẳng hạn các relations trong database hoặc một knowledge base. Mục tiêu là tổ chức thông tin hữu ích cho người dùng và biểu diễn thông tin đủ rõ nghĩa để thuật toán tiếp tục inference. Ở mức đơn giản, Information Extraction có thể sử dụng regular expressions và name lists."
+    ],
+    [
+      1,
+      "named_entities",
+      "Named Entity Recognition (NER)",
+      [
+        8,
+        9
+      ],
+      [
+        "named entity recognition",
+        "NER",
+        "PER",
+        "ORG",
+        "entity"
+      ],
+      "Named Entity Recognition là một subtask quan trọng của Information Extraction: tìm và phân loại các tên trong văn bản. Các entity types gồm Person, Date, Location và Organization. Ví dụ, Shen Guofang được gán PER, Reuters được gán ORG, còn những token nằm ngoài entity mang nhãn O. Standard evaluation của NER được thực hiện theo entity, không chỉ theo từng token."
+    ],
+    [
+      1,
+      "information_retrieval",
+      "Information Retrieval (IR) and Information Extraction",
+      [
+        5,
+        10
+      ],
+      [
+        "information retrieval",
+        "IR",
+        "information need",
+        "document retrieval"
+      ],
+      "Information Retrieval tìm các documents phù hợp với một information need từ một document collection lớn. Đầu ra của IR là những documents liên quan để người dùng hoặc bước xử lý tiếp theo khai thác. Information Extraction tập trung lấy thông tin cụ thể từ nội dung và đưa vào structured representation. Vì vậy, IR giải quyết việc tìm documents, còn IE giải quyết việc rút thông tin có cấu trúc từ documents."
+    ],
+    [
+      1,
+      "summarization",
+      "Extractive and Abstractive Summarization",
+      [
+        47,
+        48
+      ],
+      [
+        "summarization",
+        "extractive",
+        "abstractive",
+        "content selection"
+      ],
+      "Extractive Summarization tạo bản tóm tắt bằng các phrases hoặc sentences lấy từ source documents. Abstractive Summarization trình bày ý của source documents bằng cách dùng từ khác, ít nhất ở một phần nội dung. Quy trình Summarization gồm ba bước: content selection chọn nội dung cần lấy, information ordering xác định thứ tự trình bày và sentence realization chỉnh lại câu để hình thành bản tóm tắt."
+    ],
+    [
+      1,
+      "question_answering",
+      "Question Answering Approaches",
+      [
+        53,
+        56,
+        57,
+        58
+      ],
+      [
+        "question answering",
+        "QA",
+        "IR-based",
+        "knowledge-based",
+        "hybrid"
+      ],
+      "Question Answering có các hướng IR-based, knowledge-based và hybrid. IR-based Factoid QA thực hiện question processing để xác định question type, answer type, focus và relations, sau đó tạo search queries. Passage retrieval lấy ranked documents, chia thành passages và rerank; answer processing trích và xếp hạng candidate answers. Knowledge-based QA xây semantic representation của query rồi ánh xạ sang truy vấn trên structured data hoặc resources. Hybrid QA tạo candidate answers bằng IR, bổ sung ontologies hoặc semi-structured data, rồi chấm điểm bằng các knowledge sources phong phú hơn."
+    ],
+    [
+      1,
+      "chatbot_challenges",
+      "Chatbot Challenges",
+      [
+        63
+      ],
+      [
+        "chatbot",
+        "dialogue",
+        "domain knowledge",
+        "discourse knowledge",
+        "world knowledge"
+      ],
+      "Chatbot cần hiểu câu hỏi và tạo phản hồi mạch lạc, có ý nghĩa. Việc tạo phản hồi đòi hỏi domain knowledge, discourse knowledge và world knowledge. Chỉ nhận ra các từ trong câu hỏi chưa đủ để bảo đảm một cuộc trao đổi phù hợp. Những loại knowledge này hỗ trợ liên hệ câu hỏi với nội dung và tình huống đang trao đổi."
+    ],
+    [
+      1,
+      "evaluation",
+      "Black-box and Glass-box Evaluation",
+      [
+        72
+      ],
+      [
+        "evaluation",
+        "black-box",
+        "glass-box",
+        "evaluation metrics"
+      ],
+      "Black-box Evaluation đánh giá performance của toàn hệ thống theo yêu cầu thiết kế mà không xem xét cách các components bên trong hoạt động. Glass-box Evaluation xác định các subcomponents và kiểm tra từng thành phần. Hai cách cung cấp góc nhìn ở mức toàn hệ thống và mức thành phần. Với một hệ thống NLP nhiều bước, kết quả cuối cùng và kết quả của từng bước cần được phân biệt khi evaluation."
+    ],
+    [
+      1,
+      "analysis_levels",
+      "Levels of Language Analysis",
+      [
+        73,
+        74
+      ],
+      [
+        "phonology",
+        "morphology",
+        "syntax",
+        "semantics",
+        "pragmatics",
+        "discourse",
+        "world knowledge"
+      ],
+      "Phonetics và Phonology xem xét mối liên hệ giữa từ và âm thanh. Morphology xem xét cách từ được tạo từ các morphemes, như friend kết hợp ly thành friendly. Syntax mô tả cách các từ tạo thành câu đúng và quan hệ cấu trúc giữa các constituents. Semantics nghiên cứu nghĩa của từ và cách chúng kết hợp thành sentence meaning độc lập với context; Pragmatics xem xét cách sử dụng câu trong những tình huống cụ thể ảnh hưởng đến interpretation. Discourse xem xét ảnh hưởng của câu trước lên câu sau, có ích khi hiểu pronouns và thông tin thời gian. World knowledge cung cấp hiểu biết chung về thế giới mà người sử dụng ngôn ngữ cần có."
+    ],
+    [
+      1,
+      "meaning_representation",
+      "Syntax, Logical Form and Knowledge Representation",
+      [
+        75,
+        76
+      ],
+      [
+        "meaning representation",
+        "logical form",
+        "knowledge representation",
+        "KR",
+        "FOPC"
+      ],
+      "Để máy tính xử lý meaning của câu và văn bản, hệ thống cần một semantic representation rõ ràng. Một câu có nhiều interpretations có thể cần nhiều representations tương ứng. Các mức biểu diễn gồm syntactic structure, logical form biểu diễn sentence meaning và final meaning representation trong hệ tri thức. Ở mức cuối, syntactic structure và logical form được ánh xạ sang Knowledge Representation (KR). Ngôn ngữ biểu diễn được sử dụng ở mức này là First Order Predicate Calculus (FOPC)."
+    ],
+    [
+      2,
+      "word_formation",
+      "Inflection and Derivation",
+      [
+        1
+      ],
+      [
+        "morphology",
+        "inflection",
+        "derivation"
+      ],
+      "Inflection tạo một grammatical form của từ, chẳng hạn write thêm s thành writes. Derivation kết hợp root với affix để tạo từ mới, như friend thành friendly hoặc friendliness. Hai quá trình này mô tả cách word forms được hình thành từ các thành phần nhỏ hơn."
+    ],
+    [
+      2,
+      "word_categories",
+      "Word Categories and Phrases",
+      [
+        2,
+        3
+      ],
+      [
+        "part of speech",
+        "NP",
+        "VP",
+        "head"
+      ],
+      "Các word categories chính gồm noun, verb, adjective và adverb; những categories khác gồm pronoun, preposition và article. Một từ có thể thuộc các categories khác nhau tùy cách dùng trong câu. Phrase được tổ chức quanh head word, tạo thành Noun Phrase (NP), Verb Phrase (VP), Adjective Phrase (AP) hoặc Prepositional Phrase (PP). Một simple sentence có thể được mô tả bằng NP làm subject kết hợp VP làm predicate."
+    ],
+    [
+      2,
+      "verb_complements",
+      "Verbs and Complements",
+      [
+        5,
+        7,
+        8
+      ],
+      [
+        "intransitive",
+        "transitive",
+        "complement"
+      ],
+      "Intransitive verbs có thể xuất hiện mà không cần NP object, như run hoặc laugh trong cách dùng tương ứng. Transitive verbs đi với NP object. Verb complements còn có thể là that-clause, infinitival clause, wh-clause hoặc Prepositional Phrase. Mô tả syntax của verb cần xét cả verb category và complement forms mà verb đó chấp nhận."
+    ],
+    [
+      2,
+      "relative_clauses",
+      "Relative Clauses",
+      [
+        11
+      ],
+      [
+        "relative clause",
+        "NP",
+        "who",
+        "which"
+      ],
+      "Relative clause làm modifier cho Noun Phrase và giúp xác định hoặc mô tả đối tượng được nói đến. Trong the man who gave Bill the money, phần who gave Bill the money bổ nghĩa cho the man. Các relative pronouns được sử dụng gồm who, which và what."
+    ],
+    [
+      2,
+      "adjective_phrases",
+      "Adjective Phrases and Complements",
+      [
+        12,
+        13
+      ],
+      [
+        "AP",
+        "adjective",
+        "degree modifier"
+      ],
+      "Adjective Phrase có thể chứa degree modifier, như very trong very angry. Adjective cũng có thể nhận complement là Prepositional Phrase, that-clause hoặc infinitival clause. Các ví dụ pleased with the pizza và angry at the committee cho thấy preposition cùng thành phần theo sau có thể hoàn thiện meaning của adjective."
+    ],
+    [
+      2,
+      "adverbial_functions",
+      "Adverbial Functions",
+      [
+        14,
+        15
+      ],
+      [
+        "adverbial",
+        "time",
+        "duration",
+        "manner",
+        "frequency"
+      ],
+      "Adverbials có thể biểu đạt manner, time, duration, location, degree hoặc frequency. Today và at noon biểu đạt time, còn for three hours biểu đạt duration. Slowly và in great haste diễn tả manner; often và every day diễn tả frequency. Phân biệt các functions này giúp xác định loại thông tin mà adverbial bổ sung cho sự việc."
+    ],
+    [
+      3,
+      "cfg",
+      "Context-Free Grammar (CFG)",
+      [
+        4
+      ],
+      [
+        "CFG",
+        "production",
+        "terminal",
+        "nonterminal"
+      ],
+      "Context-Free Grammar gồm start symbol, productions, nonterminals và terminals. Mỗi production có dạng A → α, trong đó A là một nonterminal. Bắt đầu từ start symbol, việc áp dụng productions tạo ra các strings thuộc grammar. Parsing tìm cách các productions tạo nên structure của một input sentence."
+    ],
+    [
+      3,
+      "grammar_quality",
+      "Grammar Criteria: Generality, Selectivity and Understandability",
+      [
+        5,
+        6
+      ],
+      [
+        "generality",
+        "selectivity",
+        "understandability"
+      ],
+      "Generality yêu cầu grammar mô tả được các câu đúng trong phạm vi dự kiến. Selectivity yêu cầu grammar loại các strings không phải câu hợp lệ. Understandability và simplicity giúp người xây dựng kiểm tra, sửa và mở rộng productions. Các tiêu chí này cần được cân nhắc cùng nhau khi thiết kế grammar."
+    ],
+    [
+      3,
+      "top_down",
+      "Top-down Parsing",
+      [
+        8,
+        13
+      ],
+      [
+        "top-down parsing",
+        "search",
+        "derivation"
+      ],
+      "Top-down Parsing bắt đầu từ start symbol S rồi lần lượt expand các symbols theo grammar productions. Parser tìm một derivation có thể khớp với các input words. Các lựa chọn productions khác nhau tạo thành những search states khác nhau. Khi một lựa chọn không khớp, quá trình search cần xét lựa chọn khác."
+    ],
+    [
+      3,
+      "chart",
+      "Chart Parsing",
+      [
+        16,
+        17,
+        22,
+        23,
+        24
+      ],
+      [
+        "chart parsing",
+        "agenda",
+        "bottom-up",
+        "top-down"
+      ],
+      "Chart Parsing lưu các constituents đã nhận diện để tái sử dụng khi xây dựng structure lớn hơn. Bottom-up Chart Parsing khởi đầu từ words và word categories; agenda quản lý những constituents đang chờ xử lý. Lưu kết quả trong chart tránh dựng lại cùng một constituent nhiều lần. Top-down Chart Parsing bổ sung predictions từ những grammar constituents đang được chờ, kết hợp định hướng top-down với việc lưu kết quả trong chart."
+    ],
+    [
+      3,
+      "pcfg",
+      "Probabilistic Context-Free Grammar (PCFG)",
+      [
+        29,
+        31
+      ],
+      [
+        "PCFG",
+        "rule probability",
+        "parse tree"
+      ],
+      "PCFG bổ sung probabilities cho các productions của CFG. Probability của một parse tree bằng tích probabilities của các productions dùng để tạo tree đó. Nếu một string có nhiều parse trees hợp lệ, probability của string bằng tổng probabilities của những trees tương ứng. Các probabilities cho phép đánh giá những parses khác nhau của cùng một input."
+    ],
+    [
+      3,
+      "dependency",
+      "Dependency Structure and Dependency Tree",
+      [
+        37,
+        38,
+        39,
+        41
+      ],
+      [
+        "dependency parsing",
+        "head",
+        "dependent",
+        "nsubj",
+        "dobj"
+      ],
+      "Dependency Parsing biểu diễn các directed relations giữa head và dependent. Các relation labels có thể chỉ subject, object, adjectival modifier hoặc những grammatical functions khác. Trong dependency tree, root không có incoming arc, mỗi node khác có đúng một incoming arc và có unique path từ root đến mỗi node. Biểu diễn này tập trung vào relations giữa các words thay vì constituent structures bao chứa."
+    ],
+    [
+      3,
+      "transition_parsing",
+      "Transition-based Dependency Parsing and MaltParser",
+      [
+        48,
+        51
+      ],
+      [
+        "transition-based",
+        "MaltParser",
+        "stack",
+        "buffer"
+      ],
+      "Một parser configuration gồm stack, input buffer và tập dependency arcs đã tạo. Các transitions có thể shift word vào stack hoặc tạo dependency relation. MaltParser sử dụng greedy discriminative parsing với các bottom-up actions, trong đó những actions tạo dependencies phân biệt head ở bên trái hoặc bên phải. Parser chọn action tiếp theo dựa trên configuration hiện tại cho đến khi hoàn thành structure."
+    ],
+    [
+      4,
+      "feature_grammar",
+      "Feature Systems and Augmented Grammar",
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        "feature",
+        "augmented grammar",
+        "NUMBER"
+      ],
+      "Augmented Grammar mô tả syntactic constituents bằng feature structures thay vì chỉ dùng category names như NP hoặc V. Feature NUMBER phân biệt singular và plural. Các feature constraints mô tả agreement giữa article với noun hoặc giữa subject với verb. Feature variables cho phép các constituents chia sẻ cùng một value trong production."
+    ],
+    [
+      4,
+      "agreement",
+      "Agreement Feature (AGR)",
+      [
+        9,
+        10
+      ],
+      [
+        "AGR",
+        "person",
+        "number",
+        "agreement"
+      ],
+      "Agreement có thể phụ thuộc vào person và number. Feature AGR kết hợp hai thuộc tính này với các values 1s, 2s, 3s, 1p, 2p và 3p. Chữ số biểu thị person, còn s và p biểu thị singular và plural. Grammar productions có thể yêu cầu các constituents liên quan mang AGR values tương thích."
+    ],
+    [
+      4,
+      "vform_subcat",
+      "Verb Form (VFORM) and Subcategorization (SUBCAT)",
+      [
+        11,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      [
+        "VFORM",
+        "SUBCAT",
+        "complement"
+      ],
+      "VFORM mô tả verb form như base, present, past, present participle, past participle hoặc infinitive có to. SUBCAT mô tả complement forms mà verb nhận. Laugh có thể không có object, take nhận một NP, còn give nhận hai NP trong cấu trúc tương ứng. Want có thể nhận infinitival VP; tell có thể nhận NP rồi infinitival VP."
+    ],
+    [
+      4,
+      "binary_defaults",
+      "Binary Features and Default Values",
+      [
+        60,
+        70
+      ],
+      [
+        "binary feature",
+        "INV",
+        "default"
+      ],
+      "Binary feature nhận value + hoặc −. INV biểu thị subject inversion: Jack laughed mang −INV, còn Did Jack laugh mang +INV. Khi tạo constituent, một feature chưa được chỉ định value có thể nhận default value. Cơ chế default giúp tránh khai báo lặp lại mọi feature value trong từng production."
+    ],
+    [
+      4,
+      "lexicon_heads",
+      "Lexicon and Head Features",
+      [
+        71,
+        79,
+        80
+      ],
+      [
+        "lexicon",
+        "head feature",
+        "ROOT",
+        "AGR",
+        "VFORM"
+      ],
+      "Một word form có thể có nhiều lexical entries với các features khác nhau. Saw có thể là noun hoặc những verb forms gắn với ROOT và SUBCAT khác nhau. Với head features, mother constituent chia sẻ một số values với head constituent, chẳng hạn AGR hoặc VFORM. Khai báo head features riêng giúp rút gọn grammar productions."
+    ],
+    [
+      4,
+      "feature_parsing",
+      "Parsing with Features",
+      [
+        81,
+        82,
+        83
+      ],
+      [
+        "chart",
+        "feature matching",
+        "variable binding"
+      ],
+      "Trong Chart Parsing với augmented grammar, category names phù hợp chưa đủ để kết hợp hai constituents. Parser cần tìm variable bindings làm các features của expected constituent tương thích với constituent tìm được. Sau đó, parser sao chép arc, áp dụng instantiations và cập nhật chart. Với a dog, NP được hoàn thành khi AGR của article và noun khớp nhau."
+    ],
+    [
+      5,
+      "auxiliaries",
+      "Auxiliary Verbs and Verb Forms",
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        "auxiliary",
+        "have",
+        "be",
+        "modal"
+      ],
+      "Auxiliary verbs ràng buộc verb form theo sau: have đi với past participle; be có thể đi với ing-form hoặc past participle trong passive construction. Modal verbs như can và must đi với base form. Trong auxiliary sequence, finite auxiliary đầu tiên mang agreement với subject. Các constraints này giúp grammar chấp nhận những auxiliary sequences hợp lệ."
+    ],
+    [
+      5,
+      "passive",
+      "Passive Construction and PASSGAP",
+      [
+        7,
+        8
+      ],
+      [
+        "passive",
+        "PASSGAP",
+        "object"
+      ],
+      "Trong passive construction, NP vốn giữ vai trò object xuất hiện ở vị trí đầu câu. Agent có thể bị lược bỏ hoặc xuất hiện trong by-phrase. Feature PASSGAP biểu thị object position còn thiếu trong structure. Cách biểu diễn này liên hệ NP phía trước với vai trò của nó trong VP."
+    ],
+    [
+      5,
+      "inversion",
+      "Yes/No Questions and Auxiliary Inversion",
+      [
+        11,
+        12
+      ],
+      [
+        "yes/no question",
+        "inversion",
+        "do-support"
+      ],
+      "Yes/No question có thể được tạo bằng cách đưa auxiliary đầu tiên ra trước subject. Nếu không có auxiliary thích hợp, question construction sử dụng do. Đây là một kiểu local movement, khác với các movement có thể tạo liên hệ qua khoảng cách dài hơn. Phân biệt các movement types giúp xây grammar rules cho từng question form."
+    ],
+    [
+      5,
+      "filler_gap",
+      "Movement, Filler and Gap",
+      [
+        14,
+        16,
+        17
+      ],
+      [
+        "filler",
+        "gap",
+        "movement",
+        "topicalization"
+      ],
+      "Gap là vị trí còn khuyết trong structure; filler là constituent xuất hiện ở vị trí khác nhưng liên hệ với gap đó. Wh-movement tạo liên hệ với wh-constituent được đưa lên trước. Topicalization đưa constituent ra trước để nhấn mạnh; adverb preposing đưa adverbial lên trước; extraposition đưa một số constituents về cuối câu. Filler–gap analysis giữ liên hệ syntax dù surface order đã thay đổi."
+    ],
+    [
+      5,
+      "gap_wh",
+      "GAP Propagation and Wh-questions",
+      [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      [
+        "GAP",
+        "wh-question",
+        "who",
+        "what",
+        "where"
+      ],
+      "Feature GAP lưu và truyền thông tin về một missing constituent qua các mức structure. Null constituent rule có thể xác định vị trí mà GAP được giải quyết. Các wh-words như who, what, which, where, when và how tương ứng với những constituent types hoặc functions khác nhau. Grammar cần phối hợp wh-word với vị trí và type của missing constituent."
+    ],
+    [
+      6,
+      "mle",
+      "Maximum Likelihood Estimate (MLE)",
+      [
+        7
+      ],
+      [
+        "MLE",
+        "frequency",
+        "probability"
+      ],
+      "Maximum Likelihood Estimate dùng observed frequencies để ước lượng probabilities. Nếu flies xuất hiện 1.000 lần và 600 lần được dùng như verb, MLE cho cách dùng verb là 0,6. Estimate phụ thuộc vào dữ liệu đã quan sát và cách xác định những trường hợp cần đếm."
+    ],
+    [
+      6,
+      "sparsity",
+      "Sparse Data and Expected Likelihood Estimate (ELE)",
+      [
+        10,
+        11
+      ],
+      [
+        "sparse data",
+        "smoothing",
+        "ELE"
+      ],
+      "Với sparse data, một event có thể không xuất hiện trong training data dù vẫn có khả năng xảy ra. Nếu event được gán probability 0, tích probabilities của cả sequence có thể trở thành 0. Expected Likelihood Estimate cộng 0,5 vào mỗi count rồi normalize lại. Smoothing dành một phần probability cho những khả năng chưa được quan sát."
+    ],
+    [
+      6,
+      "evaluation",
+      "Training Set, Test Set and Cross-validation",
+      [
+        12
+      ],
+      [
+        "training",
+        "test",
+        "cross-validation"
+      ],
+      "Test set được giữ riêng để evaluation mô hình học từ training set. Một cách chia dữ liệu được sử dụng là dành khoảng 10–20% cho test set. Cross-validation thay đổi phần dữ liệu được giữ lại qua các lượt, train trên phần còn lại và evaluate trên phần được giữ riêng. Training data và evaluation data cần được phân biệt khi đánh giá khả năng xử lý dữ liệu mới."
+    ],
+    [
+      6,
+      "pos_tagging",
+      "Part-of-Speech Tagging",
+      [
+        13,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      [
+        "POS tagging",
+        "bigram",
+        "trigram",
+        "transition",
+        "emission"
+      ],
+      "Part-of-Speech Tagging tìm sequence of word categories phù hợp nhất cho sentence. Context giúp phân biệt các cách dùng của từ thay vì luôn chọn category phổ biến nhất của riêng từ đó. Bigram model xét category trước đó; trigram model xét hai categories trước đó. Sequence probability kết hợp transition probabilities giữa categories và emission probabilities của words theo categories."
+    ],
+    [
+      6,
+      "viterbi_forward",
+      "Viterbi and Forward Algorithms",
+      [
+        26,
+        28,
+        29,
+        36,
+        38
+      ],
+      [
+        "Viterbi",
+        "Forward",
+        "dynamic programming",
+        "backpointer"
+      ],
+      "Viterbi giữ sequence tốt nhất ứng với mỗi ending category tại từng position. Backpointers giúp khôi phục sequence of tags tốt nhất sau khi xử lý input. Forward cộng đóng góp của các paths thay vì chỉ giữ maximum score như Viterbi. Hai algorithms tương ứng với việc tìm best path và tổng hợp probabilities của các paths."
+    ],
+    [
+      6,
+      "language_model",
+      "Language Models",
+      [
+        44,
+        45,
+        46
+      ],
+      [
+        "language model",
+        "sentence probability",
+        "next word",
+        "chain rule"
+      ],
+      "Language Model gán probability cho word sequence hoặc dự đoán probability của next word dựa trên preceding context. Chain rule phân rã sentence probability thành các conditional probabilities. Các ứng dụng gồm Machine Translation, Spelling Correction và Speech Recognition. Language probabilities hỗ trợ đánh giá candidate outputs trong những ứng dụng này."
+    ],
+    [
+      6,
+      "semantic_similarity",
+      "Semantic Similarity and Semantic Relatedness",
+      [
+        63,
+        65,
+        66,
+        73,
+        77
+      ],
+      [
+        "semantic similarity",
+        "relatedness",
+        "distributional",
+        "term-context"
+      ],
+      "Semantic Similarity khác với Semantic Relatedness nói chung: car và bicycle có nét nghĩa tương tự, còn car và gasoline có liên quan nhưng không gần synonymy. Một hướng đo sử dụng thesaurus hoặc hierarchy; hướng khác sử dụng distributional contexts. Term-document matrix lưu word counts theo documents; term-context matrix sử dụng contexts nhỏ hơn như word windows. Các rows tạo vector representations để so sánh words."
+    ],
+    [
+      6,
+      "vector_weights",
+      "TF-IDF, PMI, PPMI and Cosine Similarity",
+      [
+        80,
+        81,
+        85,
+        86
+      ],
+      [
+        "TF-IDF",
+        "PMI",
+        "PPMI",
+        "cosine"
+      ],
+      "TF-IDF được dùng cho term-document representations; PPMI được dùng cho term-context representations. PMI phản ánh mức co-occurrence so với điều được kỳ vọng nếu hai events độc lập; PPMI thay các PMI values âm bằng 0. Cosine Similarity so sánh hướng của hai vectors: 1 khi cùng hướng, 0 khi orthogonal và −1 khi ngược hướng. Với raw frequency hoặc PPMI vectors không âm, cosine nằm trong khoảng 0 đến 1."
+    ],
+    [
+      7,
+      "logical_form",
+      "Logical Form and Contextual Interpretation",
+      [
+        2,
+        4,
+        5
+      ],
+      [
+        "logical form",
+        "context",
+        "semantic interpretation",
+        "KR"
+      ],
+      "Semantic Interpretation ánh xạ sentence sang Logical Form để biểu diễn context-independent meaning. Contextual Interpretation ánh xạ Logical Form sang final Knowledge Representation bằng cách liên hệ với situation và knowledge đang có. Pronouns, tense và quantifiers có thể cần context để được hiểu đầy đủ. Discourse cập nhật situation đang được mô tả qua các utterances."
+    ],
+    [
+      7,
+      "ambiguity",
+      "Lexical Ambiguity, Structural Ambiguity and Quasi-Logical Form",
+      [
+        8,
+        9,
+        10,
+        23,
+        24,
+        25
+      ],
+      [
+        "ambiguity",
+        "word sense",
+        "quasi-logical form"
+      ],
+      "Một word có thể có nhiều senses, như kid chỉ trẻ em hoặc dê con; run có nhiều cách dùng khác nhau. Syntactic structure cũng có thể tạo nhiều interpretations cho cùng word sequence. Quasi-Logical Form có thể giữ các word-sense alternatives hoặc scope alternatives chưa được giải quyết. Final interpretation có thể cần thông tin bổ sung ngoài surface analysis."
+    ],
+    [
+      7,
+      "semantic_units",
+      "Terms, Predicates and Propositions",
+      [
+        11,
+        12,
+        14
+      ],
+      [
+        "term",
+        "predicate",
+        "proposition",
+        "logical operator"
+      ],
+      "Term biểu diễn object hoặc event; predicate biểu diễn property hoặc relation. Áp dụng predicate cho các arguments phù hợp tạo thành proposition. Proper names có thể được biểu diễn bằng terms, common nouns bằng unary predicates và verbs bằng predicates có các arguments tương ứng. Các logical operators NOT, AND và OR kết hợp propositions thành expressions phức tạp hơn."
+    ],
+    [
+      7,
+      "quantifiers",
+      "Quantifiers, Scope and Plural Readings",
+      [
+        15,
+        16,
+        18,
+        23,
+        24,
+        25
+      ],
+      [
+        "quantifier",
+        "scope",
+        "collective",
+        "distributive"
+      ],
+      "Quantifier mô tả cách một phát biểu áp dụng cho các objects, với restriction xác định miền đối tượng và body xác định nội dung được khẳng định. Natural Language có generalized quantifiers như most, many, the và a, ngoài universal quantifier và existential quantifier trong FOPC. Plural NP có thể tạo distributive reading cho từng individual hoặc collective reading cho cả group. Quantifier scope là một nguồn tạo ambiguity."
+    ],
+    [
+      7,
+      "events_roles",
+      "Events and Semantic Roles",
+      [
+        29,
+        30,
+        33,
+        34,
+        35,
+        36
+      ],
+      [
+        "event",
+        "semantic role",
+        "agent",
+        "theme",
+        "instrument"
+      ],
+      "Event variable cho phép gắn thêm relations mô tả một event. Trong ví dụ John làm vỡ cửa sổ bằng búa, John giữ role AGENT, cửa sổ giữ role THEME và búa giữ role INSTRUMENT. Những roles khác gồm time, location, recipient, beneficiary và co-agent. Phân biệt TO-LOC với TO-POSS giúp tránh gộp destination về địa điểm và destination về sở hữu vào cùng relation."
+    ],
+    [
+      7,
+      "speech_acts",
+      "Speech Acts",
+      [
+        43,
+        44,
+        45
+      ],
+      [
+        "speech act",
+        "ASSERT",
+        "COMMAND",
+        "WHQUERY",
+        "Y/NQUERY"
+      ],
+      "Logical Form có thể biểu diễn speech act mà người nói thực hiện bằng sentence. ASSERT biểu thị proposition được khẳng định; Y/NQUERY biểu thị proposition được hỏi; COMMAND biểu thị action cần thực hiện; WHQUERY biểu thị thông tin cần xác định. Với WHQUERY, representation cần thể hiện đối tượng cần tìm và các restrictions áp dụng cho answer. Speech act giúp phân biệt việc phát biểu nội dung với việc yêu cầu thông tin hoặc hành động."
+    ],
+    [
+      8,
+      "compositionality",
+      "Compositional Semantics and Its Limits",
+      [
+        1,
+        2
+      ],
+      [
+        "compositional semantics",
+        "idiom",
+        "scope"
+      ],
+      "Compositional Semantics xây meaning của structure lớn từ meanings của các components và cách chúng kết hợp. Quantifier scope không phải lúc nào cũng khớp trực tiếp với surface syntactic structure. Idiom như kicked the bucket cũng không thể được hiểu chỉ bằng cách ghép nghĩa thông thường của từng word. Những trường hợp này cần được xét khi thiết kế semantic rules."
+    ],
+    [
+      8,
+      "lambda",
+      "Lambda Expressions and Lambda Reduction",
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        "lambda",
+        "lambda reduction",
+        "VP"
+      ],
+      "Lambda expression có thể biểu diễn meaning của VP như một function chờ subject argument. Khi kết hợp với NP, function application và lambda reduction tạo ra proposition tương ứng. Cơ chế này cũng hỗ trợ kết hợp các VPs như laughs và opens the door. Lambda expressions cung cấp cách hình thức hóa semantic composition theo sentence structure."
+    ],
+    [
+      8,
+      "sem_feature",
+      "SEM Feature and Semantic Rules",
+      [
+        8,
+        10
+      ],
+      [
+        "SEM",
+        "lexicon",
+        "semantic rule"
+      ],
+      "SEM feature gắn meaning vào lexical entries và syntactic constituents. Sentence rule kết hợp SEM của VP với SEM của NP để tạo sentence meaning. Các word senses hoặc subcategorization frames khác nhau có thể cần những lexical semantic entries riêng. Parsing cung cấp structure để đồng thời xây semantic representation."
+    ],
+    [
+      8,
+      "pp_semantics",
+      "Prepositional Phrases: Modifiers and Arguments",
+      [
+        14,
+        20,
+        21
+      ],
+      [
+        "PP",
+        "modifier",
+        "argument",
+        "PRED"
+      ],
+      "Prepositional Phrase có thể làm modifier cho event hoặc là complement được head verb yêu cầu. Jill decided on a couch có hai readings: Jill quyết định khi đang ở trên ghế, hoặc Jill quyết định lựa chọn chiếc ghế. Hai readings cần semantic composition khác nhau. PRED feature phân biệt PP hoạt động như một predicate modifier với PP đánh dấu argument position."
+    ],
+    [
+      8,
+      "subj_realization",
+      "SUBJ Feature, Feature Unification and Realization",
+      [
+        32,
+        35,
+        36,
+        40,
+        42
+      ],
+      [
+        "SUBJ",
+        "unification",
+        "realization"
+      ],
+      "SUBJ feature truyền SEM của subject NP vào VP để chèn subject vào đúng argument position. Feature Unification thực hiện một phần semantic composition mà không cần mọi lambda reduction xuất hiện tường minh. Ở chiều generation, realizer đi từ Logical Form đến tree rồi tạo word sequence. Realization algorithm liên tục expand constituents trong một danh sách cho đến khi danh sách chỉ còn lexical constituents."
+    ],
+    [
+      9,
+      "type_hierarchy",
+      "Semantic Types and Type Hierarchy",
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        "semantic type",
+        "subtype",
+        "inheritance"
+      ],
+      "Các object classes có thể disjoint, overlap hoặc có subtype relation. Type hierarchy cho phép đặt restrictions ở một supertype rồi áp dụng cho những subtypes phù hợp. Một type có thể có nhiều supertypes, tạo multiple inheritance. Semantic type information hỗ trợ loại những meaning combinations không tương thích."
+    ],
+    [
+      9,
+      "selectional_restrictions",
+      "Selectional Restrictions",
+      [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        "selectional restriction",
+        "READS",
+        "AGENT",
+        "THEME"
+      ],
+      "Một verb sense có thể ràng buộc types của các semantic roles mà nó nhận. Với read mang nghĩa đọc văn bản, AGENT phải thuộc PERSON và THEME phải thuộc TEXT object. Các senses khác của read có thể yêu cầu THEME type khác. Kết hợp những selectional restrictions này với candidate senses của dishwasher hoặc article giúp loại các interpretations không tương thích."
+    ],
+    [
+      9,
+      "constraints",
+      "Constraint Propagation and Semantic Filtering",
+      [
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        25,
+        26
+      ],
+      [
+        "constraint propagation",
+        "semantic filtering",
+        "ambiguity"
+      ],
+      "Khi một word có nhiều candidate senses, constraints giữa các constituents có thể loại những alternatives không phù hợp. Constraint checking được lặp vì loại một alternative có thể tạo thêm restrictions ở những components liên quan. Quá trình dừng khi không còn thay đổi. Semantic Filtering còn có thể loại PP attachment nếu semantic role và type của PP không tương thích với constituent được gắn vào."
+    ],
+    [
+      9,
+      "semantic_network",
+      "Semantic Networks and Inheritance",
+      [
+        27,
+        28,
+        29,
+        30,
+        32
+      ],
+      [
+        "semantic network",
+        "inheritance",
+        "subtype",
+        "role"
+      ],
+      "Semantic Network dùng nodes và links để biểu diễn concepts cùng các relations giữa chúng. Subtype links tổ chức các types thành hierarchy. Features hoặc roles khai báo ở supertype có thể được inherited bởi subtype. TRANSFER-ACTION có thể kế thừa các roles chung từ ACTION và OBJ/ACTION rồi bổ sung role riêng."
+    ],
+    [
+      9,
+      "wsd",
+      "Word Sense Disambiguation (WSD)",
+      [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      [
+        "word sense disambiguation",
+        "WSD",
+        "unigram",
+        "collocation"
+      ],
+      "Chọn most frequent sense là một baseline đơn giản cho Word Sense Disambiguation nhưng có thể sai trong context cụ thể. Bridge có sense phổ biến chỉ công trình và sense ít gặp hơn trong dentistry. Context words trong word window và collocations có thể giúp nhận ra sense ít phổ biến. Sense frequency cần được kết hợp với contextual evidence để chọn interpretation phù hợp."
+    ],
+    [
+      10,
+      "grammatical_relations",
+      "Grammatical Relations for Semantic Interpretation",
+      [
+        2
+      ],
+      [
+        "grammatical relation",
+        "LSUBJ",
+        "LOBJ",
+        "IOBJ"
+      ],
+      "Parser có thể bỏ bớt chi tiết của parse tree và giữ lại grammatical relations quan trọng cho semantics. Những relations gồm logical subject (LSUBJ), logical object (LOBJ) và indirect object (IOBJ). Semantic interpreter sử dụng các relations này làm input để xác định semantic roles. Cách tổ chức này giảm sự phụ thuộc của Semantic Interpretation vào chi tiết surface syntax."
+    ],
+    [
+      10,
+      "triples",
+      "Triples and Semantic Pattern Matching",
+      [
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        "triple",
+        "pattern matching",
+        "predicate",
+        "agent",
+        "theme"
+      ],
+      "Mỗi triple gồm discourse variable, relation và value. Các relations như PRED, LSUBJ và LOBJ cung cấp thông tin cho semantic pattern matching. Với Jack bought a ticket, grammatical relations được ánh xạ sang event BUYS1 có Jack giữ role AGENT và ticket giữ role THEME. Các patterns khớp constituent categories và positions để tạo những Logical Form fragments tương ứng."
+    ],
+    [
+      10,
+      "semantic_grammar",
+      "Semantic Grammar",
+      [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        "semantic grammar",
+        "domain",
+        "flight",
+        "destination"
+      ],
+      "Semantic Grammar sử dụng các categories gắn trực tiếp với domain, như flight, city và destination. FLIGHT-DEST có thể được mô tả bằng to kết hợp CITY-NP. Các domain-specific categories vừa ràng buộc structure vừa biểu đạt thông tin phục vụ query. Parse tree có thể trực tiếp đóng vai trò Logical Form trong cách tiếp cận này."
+    ],
+    [
+      10,
+      "semantic_grammar_tradeoffs",
+      "Semantic Grammar: Advantages and Limitations",
+      [
+        18
+      ],
+      [
+        "semantic grammar",
+        "portability",
+        "domain coverage"
+      ],
+      "Semantic Grammar hỗ trợ xây parser nhanh cho một limited application domain. Vì categories được thiết kế theo domain, chuyển sang domain mới có thể đòi hỏi xây lại semantic grammar. Mở rộng coverage cũng làm tăng khối lượng thiết kế. Khả năng phát triển nhanh trong narrow domain đi kèm hạn chế về portability và broad-domain coverage."
+    ],
+    [
+      11,
+      "knowledge_base",
+      "General Knowledge, Specific Knowledge and Knowledge Bases",
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        "knowledge base",
+        "KRL",
+        "general knowledge",
+        "specific knowledge"
+      ],
+      "General knowledge mô tả các object types và relations thường dùng; specific knowledge mô tả những facts hoặc situations cụ thể. Knowledge Base lưu các statements được biểu diễn bằng Knowledge Representation Language (KRL). Inference techniques sử dụng các statements này để rút ra thông tin tiếp theo. Knowledge representation và inference cùng tham gia vào việc khai thác KB."
+    ],
+    [
+      11,
+      "entailment",
+      "Entailment and Conversational Implicature",
+      [
+        5
+      ],
+      [
+        "entailment",
+        "conversational implicature"
+      ],
+      "Entailment là điều bắt buộc đúng nếu statement ban đầu đúng. Jack owns two cars entails Jack owns a car theo nghĩa tồn tại ít nhất một chiếc. Statement cũng có thể tạo conversational implicature, như việc nói có hai chiếc xe gợi rằng không có ba. Implicature có thể được hủy bỏ bằng thông tin bổ sung mà không gây mâu thuẫn logic như khi phủ định entailment."
+    ],
+    [
+      11,
+      "reasoning",
+      "Deduction, Induction, Abduction and Default Reasoning",
+      [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      [
+        "deduction",
+        "induction",
+        "abduction",
+        "default",
+        "nonmonotonic"
+      ],
+      "Deduction rút logical consequences từ knowledge đã có; Induction khái quát từ các instances; Abduction tìm nguyên nhân có thể giải thích observation. Với A kéo theo B, Deduction dùng A để kết luận B, còn Abduction xem A là một khả năng khi quan sát B. Default Reasoning sử dụng những điều thường đúng nhưng cho phép exceptions. Trong Nonmonotonic Reasoning, knowledge mới có thể khiến hệ thống rút lại một default conclusion trước đó."
+    ],
+    [
+      11,
+      "declarative_procedural",
+      "Declarative and Procedural Approaches",
+      [
+        13,
+        14
+      ],
+      [
+        "declarative",
+        "procedural",
+        "FOPC",
+        "inheritance"
+      ],
+      "Declarative approach phát biểu knowledge và relations bằng logical representations rồi áp dụng deduction. Procedural approach thực hiện computation cụ thể, như graph traversal trên type hierarchy để thu thập inherited roles. Hai cách có thể cho cùng kết quả nhưng khác cách tổ chức và thực hiện inference. Sự phân biệt này liên hệ Knowledge Representation với các thủ tục xử lý trên máy tính."
+    ],
+    [
+      11,
+      "sets_quantifiers",
+      "Sets, Cardinality and Collective Readings",
+      [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      [
+        "set",
+        "cardinality",
+        "collective",
+        "distributive",
+        "quantifier"
+      ],
+      "Set có thể được biểu diễn như một object để nói về cả group. Statement về nhiều người có thể mang distributive reading cho từng individual hoặc collective reading cho group. Cardinality biểu diễn số elements của set, hỗ trợ những câu có số đếm. Biểu diễn riêng sets và individuals giúp phân biệt các readings mà cùng một surface sentence có thể tạo ra."
+    ],
+    [
+      11,
+      "time",
+      "Time, Tense and Reichenbach's Model",
+      [
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      [
+        "time",
+        "interval",
+        "tense",
+        "Reichenbach",
+        "speech time",
+        "event time"
+      ],
+      "Biểu diễn time phân biệt time points, intervals và durations. Reichenbach's model dùng S cho speech time, E cho event time và R cho reference time. Trong các trường hợp đơn giản, simple present có S = R = E, simple past có E = R < S và simple future có S < R = E. Những relations này diễn giải tense bằng quan hệ giữa event time, reference time và speech time."
+    ],
+    [
+      11,
+      "procedural_semantics",
+      "Procedural Semantics and Question Answering",
+      [
+        31,
+        32,
+        33,
+        35,
+        36,
+        37
+      ],
+      [
+        "procedural semantics",
+        "Test",
+        "Retrieve",
+        "query"
+      ],
+      "Procedural Semantics diễn giải Logical Form như query expressions gắn với database operations. Test kiểm tra xem có variable binding làm các literals thỏa điều kiện hay không; Retrieve trả về mọi giá trị của variable tạo thành solution. Logical operators được ánh xạ sang các procedures phối hợp, như kiểm tra mọi điều kiện của AND hoặc tìm một điều kiện đúng cho OR. Quantifiers và questions có thể được ánh xạ sang các operations tìm object, iterate hoặc xuất các results phù hợp."
+    ]
+  ],
+  "terminology_policy": "English technical terms; Vietnamese explanations."
+}

@@ -1,0 +1,87 @@
+---
+id: "slide_ch01_language_study"
+chapter: 1
+title: "Natural Language and Computational Linguistics"
+keywords: ["NLP", "NLU", "computational linguistics", "linguistics"]
+content_vi: |-
+  Natural Language được nghiên cứu trong Linguistics, Psycholinguistics, Philosophy và Computational Linguistics. Linguistics xem xét cấu trúc ngôn ngữ, cách các từ tạo thành câu và các cách hiểu mà câu cho phép. Psycholinguistics nghiên cứu quá trình con người tạo và hiểu ngôn ngữ, còn Philosophy xem xét ý nghĩa, sự quy chiếu và quan hệ giữa ngôn ngữ với nhận thức. Computational Linguistics xây dựng mô hình ngôn ngữ bằng thuật toán và cấu trúc dữ liệu, kết hợp hiểu biết từ những lĩnh vực này. Môn học hướng đến xây dựng các mô hình Natural Language Understanding có thể triển khai trong những domain cụ thể.
+
+---
+id: "slide_ch01_applications"
+chapter: 1
+title: "Natural Language Understanding Applications"
+keywords: ["NLU applications", "text-based", "dialogue-based", "NLP applications"]
+content_vi: |-
+  Natural Language Understanding có hai nhóm ứng dụng chính: text-based applications và dialogue-based applications. Text-based applications gồm Information Retrieval, Information Extraction, Machine Translation, Summarization và Question Answering. Dialogue-based applications gồm hệ thống hỏi đáp, chăm sóc khách hàng qua điện thoại, tutoring systems, điều khiển máy bằng lời nói và hợp tác giải quyết vấn đề. Dialogue systems cần chủ động tham gia để duy trì cuộc trao đổi tự nhiên và trôi chảy.
+
+---
+id: "slide_ch01_information_extraction"
+chapter: 1
+title: "Information Extraction (IE)"
+keywords: ["information extraction", "IE", "structured representation", "knowledge base"]
+content_vi: |-
+  Information Extraction tìm và hiểu những phần thông tin liên quan trong văn bản, có thể tập hợp thông tin từ nhiều đoạn. Đầu ra là structured representation, chẳng hạn các relations trong database hoặc một knowledge base. Mục tiêu là tổ chức thông tin hữu ích cho người dùng và biểu diễn thông tin đủ rõ nghĩa để thuật toán tiếp tục inference. Ở mức đơn giản, Information Extraction có thể sử dụng regular expressions và name lists.
+
+---
+id: "slide_ch01_named_entities"
+chapter: 1
+title: "Named Entity Recognition (NER)"
+keywords: ["named entity recognition", "NER", "PER", "ORG", "entity"]
+content_vi: |-
+  Named Entity Recognition là một subtask quan trọng của Information Extraction: tìm và phân loại các tên trong văn bản. Các entity types gồm Person, Date, Location và Organization. Ví dụ, Shen Guofang được gán PER, Reuters được gán ORG, còn những token nằm ngoài entity mang nhãn O. Standard evaluation của NER được thực hiện theo entity, không chỉ theo từng token.
+
+---
+id: "slide_ch01_information_retrieval"
+chapter: 1
+title: "Information Retrieval (IR) and Information Extraction"
+keywords: ["information retrieval", "IR", "information need", "document retrieval"]
+content_vi: |-
+  Information Retrieval tìm các documents phù hợp với một information need từ một document collection lớn. Đầu ra của IR là những documents liên quan để người dùng hoặc bước xử lý tiếp theo khai thác. Information Extraction tập trung lấy thông tin cụ thể từ nội dung và đưa vào structured representation. Vì vậy, IR giải quyết việc tìm documents, còn IE giải quyết việc rút thông tin có cấu trúc từ documents.
+
+---
+id: "slide_ch01_summarization"
+chapter: 1
+title: "Extractive and Abstractive Summarization"
+keywords: ["summarization", "extractive", "abstractive", "content selection"]
+content_vi: |-
+  Extractive Summarization tạo bản tóm tắt bằng các phrases hoặc sentences lấy từ source documents. Abstractive Summarization trình bày ý của source documents bằng cách dùng từ khác, ít nhất ở một phần nội dung. Quy trình Summarization gồm ba bước: content selection chọn nội dung cần lấy, information ordering xác định thứ tự trình bày và sentence realization chỉnh lại câu để hình thành bản tóm tắt.
+
+---
+id: "slide_ch01_question_answering"
+chapter: 1
+title: "Question Answering Approaches"
+keywords: ["question answering", "QA", "IR-based", "knowledge-based", "hybrid"]
+content_vi: |-
+  Question Answering có các hướng IR-based, knowledge-based và hybrid. IR-based Factoid QA thực hiện question processing để xác định question type, answer type, focus và relations, sau đó tạo search queries. Passage retrieval lấy ranked documents, chia thành passages và rerank; answer processing trích và xếp hạng candidate answers. Knowledge-based QA xây semantic representation của query rồi ánh xạ sang truy vấn trên structured data hoặc resources. Hybrid QA tạo candidate answers bằng IR, bổ sung ontologies hoặc semi-structured data, rồi chấm điểm bằng các knowledge sources phong phú hơn.
+
+---
+id: "slide_ch01_chatbot_challenges"
+chapter: 1
+title: "Chatbot Challenges"
+keywords: ["chatbot", "dialogue", "domain knowledge", "discourse knowledge", "world knowledge"]
+content_vi: |-
+  Chatbot cần hiểu câu hỏi và tạo phản hồi mạch lạc, có ý nghĩa. Việc tạo phản hồi đòi hỏi domain knowledge, discourse knowledge và world knowledge. Chỉ nhận ra các từ trong câu hỏi chưa đủ để bảo đảm một cuộc trao đổi phù hợp. Những loại knowledge này hỗ trợ liên hệ câu hỏi với nội dung và tình huống đang trao đổi.
+
+---
+id: "slide_ch01_evaluation"
+chapter: 1
+title: "Black-box and Glass-box Evaluation"
+keywords: ["evaluation", "black-box", "glass-box", "evaluation metrics"]
+content_vi: |-
+  Black-box Evaluation đánh giá performance của toàn hệ thống theo yêu cầu thiết kế mà không xem xét cách các components bên trong hoạt động. Glass-box Evaluation xác định các subcomponents và kiểm tra từng thành phần. Hai cách cung cấp góc nhìn ở mức toàn hệ thống và mức thành phần. Với một hệ thống NLP nhiều bước, kết quả cuối cùng và kết quả của từng bước cần được phân biệt khi evaluation.
+
+---
+id: "slide_ch01_analysis_levels"
+chapter: 1
+title: "Levels of Language Analysis"
+keywords: ["phonology", "morphology", "syntax", "semantics", "pragmatics", "discourse", "world knowledge"]
+content_vi: |-
+  Phonetics và Phonology xem xét mối liên hệ giữa từ và âm thanh. Morphology xem xét cách từ được tạo từ các morphemes, như friend kết hợp ly thành friendly. Syntax mô tả cách các từ tạo thành câu đúng và quan hệ cấu trúc giữa các constituents. Semantics nghiên cứu nghĩa của từ và cách chúng kết hợp thành sentence meaning độc lập với context; Pragmatics xem xét cách sử dụng câu trong những tình huống cụ thể ảnh hưởng đến interpretation. Discourse xem xét ảnh hưởng của câu trước lên câu sau, có ích khi hiểu pronouns và thông tin thời gian. World knowledge cung cấp hiểu biết chung về thế giới mà người sử dụng ngôn ngữ cần có.
+
+---
+id: "slide_ch01_meaning_representation"
+chapter: 1
+title: "Syntax, Logical Form and Knowledge Representation"
+keywords: ["meaning representation", "logical form", "knowledge representation", "KR", "FOPC"]
+content_vi: |-
+  Để máy tính xử lý meaning của câu và văn bản, hệ thống cần một semantic representation rõ ràng. Một câu có nhiều interpretations có thể cần nhiều representations tương ứng. Các mức biểu diễn gồm syntactic structure, logical form biểu diễn sentence meaning và final meaning representation trong hệ tri thức. Ở mức cuối, syntactic structure và logical form được ánh xạ sang Knowledge Representation (KR). Ngôn ngữ biểu diễn được sử dụng ở mức này là First Order Predicate Calculus (FOPC).

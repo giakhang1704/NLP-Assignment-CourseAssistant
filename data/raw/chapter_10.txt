@@ -1,0 +1,31 @@
+---
+id: "slide_ch10_grammatical_relations"
+chapter: 10
+title: "Grammatical Relations for Semantic Interpretation"
+keywords: ["grammatical relation", "LSUBJ", "LOBJ", "IOBJ"]
+content_vi: |-
+  Parser có thể bỏ bớt chi tiết của parse tree và giữ lại grammatical relations quan trọng cho semantics. Những relations gồm logical subject (LSUBJ), logical object (LOBJ) và indirect object (IOBJ). Semantic interpreter sử dụng các relations này làm input để xác định semantic roles. Cách tổ chức này giảm sự phụ thuộc của Semantic Interpretation vào chi tiết surface syntax.
+
+---
+id: "slide_ch10_triples"
+chapter: 10
+title: "Triples and Semantic Pattern Matching"
+keywords: ["triple", "pattern matching", "predicate", "agent", "theme"]
+content_vi: |-
+  Mỗi triple gồm discourse variable, relation và value. Các relations như PRED, LSUBJ và LOBJ cung cấp thông tin cho semantic pattern matching. Với Jack bought a ticket, grammatical relations được ánh xạ sang event BUYS1 có Jack giữ role AGENT và ticket giữ role THEME. Các patterns khớp constituent categories và positions để tạo những Logical Form fragments tương ứng.
+
+---
+id: "slide_ch10_semantic_grammar"
+chapter: 10
+title: "Semantic Grammar"
+keywords: ["semantic grammar", "domain", "flight", "destination"]
+content_vi: |-
+  Semantic Grammar sử dụng các categories gắn trực tiếp với domain, như flight, city và destination. FLIGHT-DEST có thể được mô tả bằng to kết hợp CITY-NP. Các domain-specific categories vừa ràng buộc structure vừa biểu đạt thông tin phục vụ query. Parse tree có thể trực tiếp đóng vai trò Logical Form trong cách tiếp cận này.
+
+---
+id: "slide_ch10_semantic_grammar_tradeoffs"
+chapter: 10
+title: "Semantic Grammar: Advantages and Limitations"
+keywords: ["semantic grammar", "portability", "domain coverage"]
+content_vi: |-
+  Semantic Grammar hỗ trợ xây parser nhanh cho một limited application domain. Vì categories được thiết kế theo domain, chuyển sang domain mới có thể đòi hỏi xây lại semantic grammar. Mở rộng coverage cũng làm tăng khối lượng thiết kế. Khả năng phát triển nhanh trong narrow domain đi kèm hạn chế về portability và broad-domain coverage.

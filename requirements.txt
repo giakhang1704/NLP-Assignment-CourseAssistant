@@ -1,0 +1,2 @@
+# Part I and semantic handoff use the Python standard library, Python >=3.10.
+# Retrieval and LLM dependencies will be specified when those modules are built.

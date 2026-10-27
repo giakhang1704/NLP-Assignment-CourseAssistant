@@ -1,0 +1,10 @@
+{
+  "grammar": "models/grammar/course.cfg",
+  "lexicon": "models/grammar/lexicon.json",
+  "intent_schema": "configs/intent_schema.json",
+  "input": "input/sentences.txt",
+  "output": "output",
+  "evaluation": "data/raw/evaluation_queries.txt",
+  "max_tokens": 128,
+  "sample_limit": 10000
+}

@@ -1,0 +1,71 @@
+COURSE ASSISTANT ENTITY LEXICON
+
+COURSE
+NLP = Natural Language Processing / Xử lý Ngôn ngữ Tự nhiên
+NLU = Natural Language Understanding / Hiểu Ngôn ngữ Tự nhiên
+CL = Computational Linguistics / Ngôn ngữ học Tính toán
+
+PART
+PART_FOUNDATIONS = Foundations of Natural Language Processing / Nền tảng Xử lý Ngôn ngữ Tự nhiên
+PART_SYNTAX = Part I: Syntax Processing / Phân tích Cú pháp
+PART_SEMANTICS = Part II: Semantic Interpretation / Giải thích Ngữ nghĩa
+PART_CONTEXT = Part III: Context and Knowledge Representation / Ngữ cảnh và Biểu diễn Tri thức
+
+CHAPTERS
+CH01 = Chapter 1: Introduction to Natural Language Processing
+CH02 = Chapter 2: Linguistic Background: An Outline of English Syntax
+CH03 = Chapter 3: Context-Free Grammar (CFG)
+CH04 = Chapter 4: Features and Augmented Grammar
+CH05 = Chapter 5: Grammar for Natural Languages
+CH06 = Chapter 6: Ambiguity Resolutions: Statistical Methods
+CH07 = Chapter 7: Semantics and Logical Form
+CH08 = Chapter 8: Linking Syntax and Semantics
+CH09 = Chapter 9: Ambiguity Resolution: Selectional Restrictions
+CH10 = Chapter 10: Other Strategies for Semantic Interpretation
+CH11 = Chapter 11: Knowledge Representation and Reasoning
+
+TOPICS
+CFG = Context-Free Grammar / Ngữ pháp phi ngữ cảnh
+FOPC = First Order Predicate Calculus / Phép tính vị tự bậc nhất
+POS = Part-of-Speech / Từ loại
+NER = Named Entity Recognition / Nhận dạng thực thể tên
+IE = Information Extraction / Trích xuất thông tin
+IR = Information Retrieval / Truy vấn thông tin
+QA = Question Answering / Hỏi đáp tự động
+MT = Machine Translation / Dịch máy
+HMM = Hidden Markov Model / Mô hình Markov ẩn
+CRF = Conditional Random Field / Trường ngẫu nhiên điều kiện
+MLE = Maximum Likelihood Estimation / Ước lượng xác suất cực đại
+ELE = Expected Likelihood Estimate / Ước lượng xác suất kỳ vọng
+PMI = Pointwise Mutual Information / Thông tin tương hỗ điểm
+PPMI = Positive Pointwise Mutual Information / Thông tin tương hỗ điểm dương
+UAS = Unlabeled Attachment Score / Điểm gán phụ thuộc không nhãn
+LAS = Labeled Attachment Score / Điểm gán phụ thuộc có nhãn
+NP = Noun Phrase / Cụm danh từ
+VP = Verb Phrase / Cụm động từ
+PP = Prepositional Phrase / Cụm giới từ
+AP = Adjective Phrase / Cụm tính từ
+GAP = Missing constituent feature in Wh-movement / Thuộc tính khoảng khuyết trong di chuyển Wh
+WSD = Word Sense Disambiguation / Khử nhập nhằng nghĩa từ
+KRL = Knowledge Representation Language / Ngôn ngữ biểu diễn tri thức
+KB = Knowledge Base / Cơ sở tri thức
+LSUBJ = Logical Subject / Chủ ngữ logic
+LOBJ = Logical Object / Tân ngữ logic
+
+ASSIGNMENT
+ASSIGNMENT_CH03 = Dependency parsing assignment using MaltParser / Bài tập phân tích cú pháp phụ thuộc
+ASSIGNMENT_CH08 = Lambda reduction exercises / Bài tập thu gọn Lambda
+ASSIGNMENT_CH10 = Semantic grammar tree construction / Bài tập vẽ cây phân tích ngữ pháp ngữ nghĩa
+ASSIGNMENT_CH11 = Procedural semantics execution / Bài tập biểu diễn ngữ nghĩa thủ tục
+FINAL_PROJECT = NLP Course Project / Bài tập lớn môn học
+
+INTENTS
+GET_COURSE_INFO = Yêu cầu thông tin chung về khóa học, số tín chỉ, mục tiêu
+GET_SCHEDULE = Yêu cầu thông tin về lịch học, thời gian biểu, mốc thời gian
+GET_TOPIC = Yêu cầu giải thích khái niệm, định nghĩa, nội dung bài học
+GET_LO = Yêu cầu thông tin về chuẩn đầu ra và mục tiêu môn học
+GET_ASSIGNMENT = Yêu cầu thông tin về bài tập thực hành, bài tập chương, bài tập lớn
+GET_RULE = Yêu cầu thông tin về quy định, chính sách, cách tính điểm môn học
+GET_RESOURCE = Yêu cầu tài liệu tham khảo, slide, giáo trình
+UNKNOWN = Câu hỏi ngoài lề không liên quan đến môn học
+CONTEXT_DEPENDENT = Câu hỏi có chứa từ tham chiếu phụ thuộc ngữ cảnh

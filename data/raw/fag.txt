@@ -1,0 +1,81 @@
+COURSE ASSISTANT FAQ
+
+Q1:
+question: Môn học Xử lý Ngôn ngữ Tự nhiên (NLP) tập trung vào những lĩnh vực và mục tiêu chính nào?
+answer: Môn học tập trung nghiên cứu cấu trúc ngôn ngữ tự nhiên, các mô hình tính toán và ứng dụng NLU. Mục tiêu chính là giúp người học nắm vững các mức độ phân tích ngôn ngữ từ Cú pháp (Syntax), Dạng logic (Logical Form) đến Biểu diễn tri thức (Knowledge Representation).
+
+Q2:
+question: Môn học gồm mấy chương chính và được chia thành các phần (Part) lớn nào?
+answer: Môn học bao gồm 11 chương bài giảng chính. Nội dung chia làm 3 phần chính: Part I - Syntax Processing (Chương 2 đến Chương 5), Part II - Semantic Interpretation (Chương 7 đến Chương 10), và Part III - Context and Knowledge Representation (Chương 11), bên cạnh Chương 1 (Tổng quan) và Chương 6 (Phương pháp thống kê Khử nhập nhằng).
+
+Q3:
+question: Khái niệm Đánh giá Black box và Glass box đối với hệ thống NLU được giới thiệu ở chương nào và khác nhau ra sao?
+answer: Khái niệm này thuộc Chương 1. Đánh giá Black box đo lường hiệu năng tổng thể của hệ thống dựa trên yêu cầu thiết kế mà không can thiệp vào bên trong; trong khi Glass box đánh giá chi tiết từng thành phần con cấu thành nên hệ thống.
+
+Q4:
+question: Khái niệm Cú pháp phi ngữ cảnh (CFG) và Phân tích cú pháp phụ thuộc (Dependency Parsing) học ở chương mấy?
+answer: Hai nội dung này thuộc Chương 3 (Context-Free Grammar). Chương này giới thiệu các quy tắc CFG, thuật toán Chart Parsing, cùng các công cụ như MaltParser và độ đo đánh giá UAS/LAS cho cú pháp phụ thuộc.
+
+Q5:
+question: Thuật ngữ "Feature Unification" (Hợp nhất thuộc tính) và "Augmented Grammar" xuất hiện trong chương nào?
+answer: Thuật ngữ này thuộc Chương 4 (Features and Augmented Grammar). Nội dung giải thích cách mở rộng CFG bằng thuộc tính ngôi, số, dạng động từ để xử lý sự hòa kết (agreement) giữa chủ ngữ và động từ.
+
+Q6:
+question: Hiện tượng di chuyển "Wh-movement" và thuật toán lan truyền thuộc tính GAP được giảng dạy ở chương nào?
+answer: Hiện tượng Wh-movement và thuộc tính GAP thuộc Chương 5 (Grammar for Natural Languages). Chương này hướng dẫn cách truyền thuộc tính khoảng khuyết GAP qua các nút trong cây phân tích để xử lý câu hỏi Wh-question.
+
+Q7:
+question: Thuật toán Viterbi và Mô hình Markov ẩn (HMM) để gán nhãn từ loại (POS Tagging) nằm ở chương mấy?
+answer: Các mô hình chuỗi và thuật toán Viterbi cho POS Tagging thuộc Chương 6 (Ambiguity Resolutions: Statistical Methods). Chương này cũng bao gồm ước lượng xác suất MLE, ELE và mô hình Trường ngẫu nhiên điều kiện (CRF).
+
+Q8:
+question: Chỉ số PMI (Pointwise Mutual Information) và ma trận Term-Context được giới thiệu ở chương nào?
+answer: PMI và ma trận Term-Context thuộc Chương 6. PMI dùng để đo mức độ tương quan giữa hai từ trong cửa sổ ngữ cảnh nhằm xây dựng mô hình không gian vectơ.
+
+Q9:
+question: Sự khác biệt giữa Semantics (Ngữ nghĩa) và Pragmatics (Ngữ dụng) được trình bày trong chương nào?
+answer: Trình bày trong Chương 7 (Semantics and Logical Form). Chương này phân biệt ngữ nghĩa độc lập với ngữ cảnh (Logical Form) và ngữ dụng phụ thuộc ngữ cảnh tình huống.
+
+Q10:
+question: Các vai trò ngữ nghĩa (Thematic Roles) như AGENT, THEME, LOCATION được học ở chương nào?
+answer: Thuộc Chương 7 (Semantics and Logical Form). Bổ sung thêm các Speech Acts như ASSERT, Y/N-QUERY, COMMAND và WH-QUERY.
+
+Q11:
+question: Phép tính Lambda (Lambda Calculus) và Phép thu gọn Lambda (Lambda Reduction) nằm ở chương mấy?
+answer: Thuộc Chương 8 (Linking Syntax and Semantics). Phép tính này dùng để biểu diễn các vị tự một ngôi và kết hợp ngữ nghĩa các thành phần cú pháp thành dạng logic hoàn chỉnh.
+
+Q12:
+question: Ràng buộc chọn lựa (Selectional Restrictions) và Khử nhập nhằng nghĩa từ dựa trên phân cấp thứ bậc nằm ở đâu?
+answer: Trình bày ở Chương 9 (Ambiguity Resolution: Selectional Restrictions). Chương này coi việc khử nhập nhằng là bài toán thỏa mãn ràng buộc dựa trên cấu trúc phân cấp loại.
+
+Q13:
+question: Khái niệm "Semantic Grammars" (Cú pháp ngữ nghĩa) thuộc chương nào và có đặc điểm gì?
+answer: Trình bày ở Chương 10 (Other Strategies for Semantic Interpretation). Cú pháp ngữ nghĩa thay thế các danh mục cú pháp chung bằng danh mục riêng theo miền ứng dụng, giúp phát triển hệ thống nhanh nhưng khó tái sử dụng.
+
+Q14:
+question: Kiến thức chung (General Knowledge) và Kiến thức cụ thể (Specific Knowledge) được thảo luận ở chương nào?
+answer: Thảo luận ở Chương 11 (Knowledge Representation and Reasoning). Chương này xây dựng Cơ sở tri thức (KB) để xử lý ngữ cảnh và phân biệt tri thức phân cấp chung với các thực thể tình huống cụ thể.
+
+Q15:
+question: Ngữ nghĩa thủ tục (Procedural Semantics) dùng cho bài toán Hỏi đáp Cơ sở dữ liệu nằm ở chương mấy?
+answer: Trình bày ở Chương 11. Ngữ nghĩa thủ tục ánh xạ câu hỏi ngôn ngữ tự nhiên thành các chương trình truy vấn cơ sở dữ liệu (ví dụ: PRINT-ALL, FIND-THE).
+
+Q16:
+question: Yêu cầu đánh giá mô hình thống kê qua tập Training và Test split / Cross-validation nằm ở chương nào?
+answer: Thuộc Chương 6 (Ambiguity Resolutions: Statistical Methods). Dữ liệu corpus thường chia 10-20% làm tập test, hoặc dùng k-fold cross-validation để đánh giá.
+
+Q17:
+question: Môn học yêu cầu những bài tập thực hành theo chương như thế nào?
+answer: Môn học có các bài tập thực hành cụ thể sau mỗi chương, như: chạy MaltParser cho Dependency Parsing (Chương 3), vẽ biểu đồ phân tích Top-Down Chart Parsing với features (Chương 4), tính Viterbi hand-simulation (Chương 6), và thu gọn Lambda (Chương 8).
+
+Q18:
+question: Chuẩn đánh giá Intrinsic Evaluation và Extrinsic Evaluation khác nhau như thế nào và xuất hiện ở đâu?
+answer: Trình bày ở Chương 6. Intrinsic evaluation đo lường trực tiếp sự tương quan giữa thuật toán và con người (như điểm tương đồng từ), còn Extrinsic evaluation đo lường hiệu năng qua tác vụ cuối (như sửa lỗi chính tả, WSD, TOEFL).
+
+Q19:
+question: Các hình thức kiểm tra và bài tập lớn môn học bao gồm những nội dung gì?
+answer: Môn học gồm các bài tập lập trình/thực hành theo từng chương (như Dependency parsing, Viterbi POS tagging, Lambda reduction) và bài tập lớn tổng hợp kết nối các mức độ phân tích ngôn ngữ từ cú pháp tới biểu diễn tri thức.
+
+Q20:
+question: Tài liệu tham khảo chính cho môn học này bao gồm những nguồn nào?
+answer: Tài liệu tham khảo chính được giới thiệu trong slide gồm cuốn sách kinh điển "Speech and Language Processing" của Daniel Jurafsky & James H. Martin, cùng các slide bài giảng và tài liệu trực tuyến về Dependency Grammar.

@@ -1,0 +1,47 @@
+---
+id: "slide_ch07_logical_form"
+chapter: 7
+title: "Logical Form and Contextual Interpretation"
+keywords: ["logical form", "context", "semantic interpretation", "KR"]
+content_vi: |-
+  Semantic Interpretation ánh xạ sentence sang Logical Form để biểu diễn context-independent meaning. Contextual Interpretation ánh xạ Logical Form sang final Knowledge Representation bằng cách liên hệ với situation và knowledge đang có. Pronouns, tense và quantifiers có thể cần context để được hiểu đầy đủ. Discourse cập nhật situation đang được mô tả qua các utterances.
+
+---
+id: "slide_ch07_ambiguity"
+chapter: 7
+title: "Lexical Ambiguity, Structural Ambiguity and Quasi-Logical Form"
+keywords: ["ambiguity", "word sense", "quasi-logical form"]
+content_vi: |-
+  Một word có thể có nhiều senses, như kid chỉ trẻ em hoặc dê con; run có nhiều cách dùng khác nhau. Syntactic structure cũng có thể tạo nhiều interpretations cho cùng word sequence. Quasi-Logical Form có thể giữ các word-sense alternatives hoặc scope alternatives chưa được giải quyết. Final interpretation có thể cần thông tin bổ sung ngoài surface analysis.
+
+---
+id: "slide_ch07_semantic_units"
+chapter: 7
+title: "Terms, Predicates and Propositions"
+keywords: ["term", "predicate", "proposition", "logical operator"]
+content_vi: |-
+  Term biểu diễn object hoặc event; predicate biểu diễn property hoặc relation. Áp dụng predicate cho các arguments phù hợp tạo thành proposition. Proper names có thể được biểu diễn bằng terms, common nouns bằng unary predicates và verbs bằng predicates có các arguments tương ứng. Các logical operators NOT, AND và OR kết hợp propositions thành expressions phức tạp hơn.
+
+---
+id: "slide_ch07_quantifiers"
+chapter: 7
+title: "Quantifiers, Scope and Plural Readings"
+keywords: ["quantifier", "scope", "collective", "distributive"]
+content_vi: |-
+  Quantifier mô tả cách một phát biểu áp dụng cho các objects, với restriction xác định miền đối tượng và body xác định nội dung được khẳng định. Natural Language có generalized quantifiers như most, many, the và a, ngoài universal quantifier và existential quantifier trong FOPC. Plural NP có thể tạo distributive reading cho từng individual hoặc collective reading cho cả group. Quantifier scope là một nguồn tạo ambiguity.
+
+---
+id: "slide_ch07_events_roles"
+chapter: 7
+title: "Events and Semantic Roles"
+keywords: ["event", "semantic role", "agent", "theme", "instrument"]
+content_vi: |-
+  Event variable cho phép gắn thêm relations mô tả một event. Trong ví dụ John làm vỡ cửa sổ bằng búa, John giữ role AGENT, cửa sổ giữ role THEME và búa giữ role INSTRUMENT. Những roles khác gồm time, location, recipient, beneficiary và co-agent. Phân biệt TO-LOC với TO-POSS giúp tránh gộp destination về địa điểm và destination về sở hữu vào cùng relation.
+
+---
+id: "slide_ch07_speech_acts"
+chapter: 7
+title: "Speech Acts"
+keywords: ["speech act", "ASSERT", "COMMAND", "WHQUERY", "Y/NQUERY"]
+content_vi: |-
+  Logical Form có thể biểu diễn speech act mà người nói thực hiện bằng sentence. ASSERT biểu thị proposition được khẳng định; Y/NQUERY biểu thị proposition được hỏi; COMMAND biểu thị action cần thực hiện; WHQUERY biểu thị thông tin cần xác định. Với WHQUERY, representation cần thể hiện đối tượng cần tìm và các restrictions áp dụng cho answer. Speech act giúp phân biệt việc phát biểu nội dung với việc yêu cầu thông tin hoặc hành động.

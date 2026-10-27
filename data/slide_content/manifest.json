@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "item_count": 70,
+  "counts_by_chapter": {
+    "1": 11,
+    "2": 6,
+    "3": 7,
+    "4": 6,
+    "5": 5,
+    "6": 8,
+    "7": 6,
+    "8": 5,
+    "9": 5,
+    "10": 4,
+    "11": 7
+  },
+  "sources": [
+    {
+      "chapter": 1,
+      "path": "Slide bài giảng-20260904/CHAPTER 1.pptx",
+      "sha256": "b7771793778f46203adc1db9091ea2ae022bb2cda648f2123e39fe518166db4b",
+      "slide_count": 77,
+      "text_block_count": null
+    },
+    {
+      "chapter": 2,
+      "path": "Slide bài giảng-20260904/CHAPTER 2.pptx",
+      "sha256": "8c57979df57cc00f9952e26c96c25c8ea3d2ac1b21a78577653fc28f7642c200",
+      "slide_count": 15,
+      "text_block_count": null
+    },
+    {
+      "chapter": 3,
+      "path": "Slide bài giảng-20260904/CHAPTER 3.pptx",
+      "sha256": "5ebee64e32a482014c905f0f64412f3769ce7ec897281eb7396ce41ba2d9f0c7",
+      "slide_count": 64,
+      "text_block_count": null
+    },
+    {
+      "chapter": 4,
+      "path": "Slide bài giảng-20260904/CHAPTER 4.ppt",
+      "sha256": "3b166e07c786d4c737c085b424751446bfe9a5f3ebede2f8324e7bf1a0b90704",
+      "slide_count": null,
+      "text_block_count": 91
+    },
+    {
+      "chapter": 5,
+      "path": "Slide bài giảng-20260904/Chapter 5.pptx",
+      "sha256": "5539cf6f8ad45daa04dffcdc896a345614ea56b8d35f2e9a219e79dc6db19965",
+      "slide_count": 32,
+      "text_block_count": null
+    },
+    {
+      "chapter": 6,
+      "path": "Slide bài giảng-20260904/Chapter 6.pptx",
+      "sha256": "ce0e32b88f5eb4aa5f5851f983635810027b90abbafb52ec067f49d359f31047",
+      "slide_count": 92,
+      "text_block_count": null
+    },
+    {
+      "chapter": 7,
+      "path": "Slide bài giảng-20260904/Chapter 7.pptx",
+      "sha256": "42d3d4df3b0c103799af142ff5dc4fdf5cb186496ccdd8dae059a8924680c9a7",
+      "slide_count": 49,
+      "text_block_count": null
+    },
+    {
+      "chapter": 8,
+      "path": "Slide bài giảng-20260904/Chapter 8.pptx",
+      "sha256": "66bc4b9e74bf88523cd3271425077ae6b0a24327d9dec50357886b8d68ea4dca",
+      "slide_count": 49,
+      "text_block_count": null
+    },
+    {
+      "chapter": 9,
+      "path": "Slide bài giảng-20260904/Chapter 9.pptx",
+      "sha256": "6d3976348afdab28970ef1993b29e61c1a37f089e6d143acfad7f93c3546a143",
+      "slide_count": 48,
+      "text_block_count": null
+    },
+    {
+      "chapter": 10,
+      "path": "Slide bài giảng-20260904/Chapter 10.pptx",
+      "sha256": "9533914afb6d468a67284061d30c3c1b027d60974cc4e69f01f6aa23185f35c8",
+      "slide_count": 20,
+      "text_block_count": null
+    },
+    {
+      "chapter": 11,
+      "path": "Slide bài giảng-20260904/Chapter 11.pptx",
+      "sha256": "3d2e4593401891f0985faf1e1d15bcd2015c0bcade5101af4881fbc186350c49",
+      "slide_count": 38,
+      "text_block_count": null
+    }
+  ],
+  "ocr": false,
+  "chapter_1_included": true,
+  "knowledge_fields": [
+    "id",
+    "chapter",
+    "title",
+    "keywords",
+    "content_vi"
+  ],
+  "provenance_file": "provenance.jsonl",
+  "integration_status": "Selected knowledge only; not indexed by the RAG pipeline yet."
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+build/
+dist/
+models/retrieval/*.npy
+models/retrieval/*.pkl
+models/retrieval/*.index
+output/

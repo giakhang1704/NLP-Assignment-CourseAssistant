@@ -1,0 +1,40 @@
+SAMPLE EVALUATION QUERIES
+Q01 | Mục tiêu chính của khóa học Xử lý Ngôn ngữ Tự nhiên là gì? | GET_LO | course_objective
+Q02 | Hai nhóm ứng dụng chính của hiểu ngôn ngữ tự nhiên (NLU) bao gồm những gì? | GET_TOPIC | nlu_applications
+Q03 | Sự khác biệt giữa đánh giá Black box và Glass box trong hệ thống NLU là gì? | GET_TOPIC | evaluation_method
+Q04 | Ba tiêu chí Generality, Selectivity và Understandability của Context-Free Grammar (CFG) có nghĩa là gì? | GET_TOPIC | cfg_properties
+Q05 | Cấu trúc cú pháp (Syntax) và Dạng logic (Logical Form) đóng vai trò gì trong các mức biểu diễn ngôn ngữ? | GET_TOPIC | language_levels
+Q06 | Bài tập Chương 3 yêu cầu sử dụng công cụ dependency parser nào để phân tích câu? | GET_ASSIGNMENT | dependency_parser
+Q07 | Độ chính xác UAS và LAS trong đánh giá Dependency Parsing được tính toán dựa trên công thức nào? | GET_TOPIC | evaluation_metrics
+Q08 | Hiện tượng subject-aux inversion và unbounded movement khác nhau thế nào trong câu hỏi Tiếng Anh? | GET_TOPIC | movement_phenomena
+Q09 | Thuật toán Viterbi được áp dụng cho bài toán gán nhãn từ loại (POS Tagging) như thế nào? | GET_TOPIC | pos_tagging
+Q10 | Khái niệm Margin error trong phương pháp ước lượng xác suất cực đại (MLE) là gì? | GET_TOPIC | mle_estimation
+Q11 | Phạm vi ứng dụng và hạn chế của Ngữ pháp ngữ nghĩa (Semantic Grammars) trong domain truy vấn chuyến bay là gì? | GET_TOPIC | semantic_grammar
+Q12 | Yêu cầu bài tập Chương 10 về vẽ cây phân tích cú pháp ngữ nghĩa cho câu truy vấn như thế nào? | GET_ASSIGNMENT | parse_tree_exercise
+Q13 | Hai dạng tri thức quan trọng trong hệ thống tri thức (General knowledge & Specific knowledge) có đặc điểm gì? | GET_TOPIC | knowledge_types
+Q14 | Suy luận diễn dịch (Deductive) và suy luận không diễn dịch (Non-deductive) khác nhau ra sao trong biểu diễn tri thức? | GET_TOPIC | inference_types
+Q15 | Ba mốc thời gian S (speech), E (event), R (reference) trong lý thuyết của Reichenbach đại diện cho điều gì? | GET_TOPIC | reichenbach_time
+Q16 | Phương pháp Procedural Semantics xử lý câu hỏi truy vấn cơ sở dữ liệu như thế nào? | GET_TOPIC | procedural_semantics
+Q17 | Bài tập Chương 11 yêu cầu biểu diễn ngữ nghĩa dạng logic tập trung vào thành phần cú pháp nào? | GET_ASSIGNMENT | logic_representation
+Q18 | Các vai trò ngữ nghĩa (Thematic roles) như AGENT, THEME, TO-LOC, AT-TIME được định nghĩa như thế nào? | GET_TOPIC | thematic_roles
+Q19 | Ý nghĩa của các toán tử hành vi ngôn từ (Speech Acts) ASSERT, Y/N-QUERY, COMMAND và WH-QUERY là gì? | GET_TOPIC | speech_acts
+Q20 | Ràng buộc chọn lựa (Selectional Restrictions) giúp khử nhập nhằng từ vựng ra sao? | GET_TOPIC | selectional_restrictions
+Q21 | Chỉ số Mutual Information (PMI) giữa hai từ trong cửa sổ văn bản được tính như thế nào? | GET_TOPIC | mutual_information
+Q22 | Môn học cung cấp những tài liệu tham khảo nào cho phần ngữ pháp phụ thuộc (Dependency Grammar)? | GET_RESOURCE | reference_materials
+Q23 | Bài tập Chương 8 yêu cầu thực hiện phép thu gọn lambda (lambda reduction) cho biểu thức nào? | GET_ASSIGNMENT | lambda_reduction
+Q24 | Ưu điểm của mô hình chuỗi Conditional Random Fields (CRFs) so với các mô hình local chaining là gì? | GET_TOPIC | crf_model
+Q25 | Cách xây dựng ma trận Term-Document và Term-Context trong mô hình không gian vectơ (Vector-space models) là gì? | GET_TOPIC | vector_space_models
+Q26 | Bảng nhãn Penn Treebank POS Tagset gồm những nhãn cơ bản nào được giới thiệu trong slide? | GET_TOPIC | pos_tagset
+Q27 | Slide môn học có quy định gì về cách thức làm bài tập thực hành theo từng chương không? | GET_RULE | course_rules
+
+OUT-OF-SCOPE EXAMPLES
+Q28 | Lịch thi lại của các môn học kỳ này xem ở đâu? | UNKNOWN | OUT_OF_SCOPE
+Q29 | Học phí một tín chỉ của trường năm nay là bao nhiêu tiền? | UNKNOWN | OUT_OF_SCOPE
+Q30 | Hôm nay thời tiết ở thành phố Hà Nội thế nào? | UNKNOWN | OUT_OF_SCOPE
+Q31 | Làm thế nào để đăng ký ký túc xá cho sinh viên năm nhất? | UNKNOWN | OUT_OF_SCOPE
+
+REFERENCE / CONTEXT EXAMPLES
+Q32 | Bài tập của chương đó yêu cầu sinh viên làm những câu nào? | CONTEXT_DEPENDENT | chapter_exercise
+Q33 | Thầy có thể giải thích chi tiết hơn về thuật toán này không? | CONTEXT_DEPENDENT | algorithm_detail
+Q34 | So sánh mô hình đó với CRF xem phương pháp nào tối ưu hơn? | CONTEXT_DEPENDENT | model_comparison
+Q35 | Ví dụ về câu hỏi Wh-question nằm ở slide mấy vậy ạ? | CONTEXT_DEPENDENT | slide_location

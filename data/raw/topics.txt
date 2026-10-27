@@ -1,0 +1,189 @@
+NLP TOPIC KNOWLEDGE BASE
+========================
+
+CHAPTER 1: INTRODUCTION TO NATURAL LANGUAGE PROCESSING
+chapter_id: CH01
+part: Foundations of Natural Language Processing
+keywords: computational linguistics, natural language understanding, information extraction, named entity recognition, question answering
+summary:
+This chapter introduces the fundamental concepts of computational linguistics and natural language understanding. It covers key text-based and dialogue-based applications, including information retrieval, machine translation, and question answering systems. Special emphasis is placed on information extraction tasks like named entity recognition, evaluation methodologies, and the different levels of language analysis.
+
+subtopics:
+1.1 Applications of Natural Language Understanding
+1.2 Text-based Applications
+1.2.1 Information Extraction and Named Entity Recognition
+1.2.2 Information Retrieval and Question Answering
+1.3 Dialogue-based Applications
+1.4 Evaluation Methodologies: Black-box vs. Glass-box
+1.5 Levels of Language Analysis and Semantic Representation
+
+CHAPTER 2: LINGUISTIC BACKGROUND: AN OUTLINE OF ENGLISH SYNTAX
+chapter_id: CH02
+part: Part I: Syntax Processing
+keywords: inflectional forms, derivational forms, word categories, noun phrase, verb phrase
+summary:
+This chapter provides an outline of English syntax by defining basic word formation processes and syntactic categories. It details how inflectional and derivational forms construct words, which then form major categories like nouns, verbs, adjectives, and adverbs. Furthermore, it explains the structural composition of noun phrases, verb phrases, clausal complements, and relative clauses within simple sentence structures.
+
+subtopics:
+2.1 Words and Word Formation
+2.1.1 Inflectional and Derivational Forms
+2.1.2 Word Categories and Part of Speech
+2.2 Phrase Structure
+2.2.1 Noun Phrases, Specifiers, and Qualifiers
+2.2.2 Verb Phrases and Sentence Moods
+2.3 Complex Syntactic Structures
+2.3.1 Clausal Complements
+2.3.2 Relative Clauses
+
+CHAPTER 3: CONTEXT-FREE GRAMMAR (CFG)
+chapter_id: CH03
+part: Part I: Syntax Processing
+keywords: context-free grammar, parsing algorithms, chart parsing, dependency grammar, universal dependencies
+summary:
+This chapter focuses on formalizing English syntax using Context-Free Grammars (CFG) and constituent parse trees. It outlines the key properties of good grammars, specifically generality, selectivity, and understandability, alongside parsing strategies like top-down and bottom-up search. Additionally, it introduces chart parsing algorithms and dependency grammar formalisms, including Universal Dependencies and evaluation metrics like UAS and LAS.
+
+subtopics:
+3.1 Context-Free Grammar Rules and Derivations
+3.1.1 Grammar Criteria: Generality, Selectivity, and Understandability
+3.1.2 Sentence Parsing Strategies: Top-Down vs. Bottom-Up
+3.1.3 Chart Parsing Algorithms
+3.1.3.1 Top-Down Chart Parsing
+3.1.3.2 Bottom-Up Chart Parsing
+3.2 Dependency Grammar and Dependency Structures
+3.2.1 Dependency Relations and Universal Dependencies
+3.2.2 Dependency Formalisms and Parsing Techniques
+
+CHAPTER 4: FEATURES AND AUGMENTED GRAMMAR
+chapter_id: CH04
+part: Part I: Syntax Processing
+keywords: feature structures, augmented grammar, number agreement, verb subcategorization, feature unification
+summary:
+This chapter examines augmented grammars, which extend basic context-free mechanisms by attaching feature structures to syntactic constituents. It details feature systems for agreement, including person, number, verb form, and prepositional form features. The chapter also demonstrates how feature unification and variable bindings are integrated into chart parsing to enforce grammatical constraints like subject-verb agreement.
+
+subtopics:
+4.1 Feature Systems and Feature Structures
+4.1.1 Feature Numbers and Agreement Restrictions
+4.1.2 Variable Bindings in Feature Rules
+4.2 Basic Feature Systems for English
+4.2.1 Person and Number Agreement
+4.2.2 Verb Form and Verb Subcategorization
+4.2.3 Prepositional Forms and Binary Features
+4.3 Extended Chart Parsing with Feature Unification
+
+CHAPTER 5: GRAMMAR FOR NATURAL LANGUAGES
+chapter_id: CH05
+part: Part I: Syntax Processing
+keywords: auxiliary verbs, movement phenomena, wh-movement, gap feature, chart parsing
+summary:
+This chapter covers complex syntactic phenomena in natural language, focusing on auxiliary verb structures and movement phenomena. It explains how constituents move in wh-questions, topicalization, and relative clauses, introducing the concepts of fillers and gaps. A specialized GAP feature propagation algorithm within context-free grammar is presented to handle missing constituents during bottom-up chart parsing.
+
+subtopics:
+5.1 Auxiliary Verbs and Verb Phrase Complements
+5.2 Movement Phenomena in Language
+5.2.1 Wh-movement, Topicalization, and Adverb Preposing
+5.2.2 Subject-Auxiliary Inversion
+5.2.3 Fillers and Gaps
+5.3 Handling Questions in Context-Free Grammar
+5.3.1 GAP Feature Propagation Algorithm
+5.3.2 Chart Parsing for Sentences with Displaced Constituents
+
+CHAPTER 6: AMBIGUITY RESOLUTIONS: STATISTICAL METHODS
+chapter_id: CH06
+part: Ambiguity Resolution and Language Modeling
+keywords: probability theory, maximum likelihood estimation, pos tagging, viterbi algorithm, pointwise mutual information
+summary:
+This chapter explores statistical and probabilistic approaches to resolving linguistic ambiguity, particularly in part-of-speech (POS) tagging and language modeling. It lays out foundations in basic probability theory, Bayes' rule, and estimation methods like MLE and ELE. The chapter further details sequence models including Hidden Markov Models (HMM) and Conditional Random Fields (CRFs), along with evaluation metrics and vector space models using PMI and PPMI.
+
+subtopics:
+6.1 Basic Probability Theory and Bayes' Rule
+6.2 Estimating Probabilities with Sparse Data
+6.2.1 Maximum Likelihood Estimation (MLE)
+6.2.2 Expected Likelihood Estimate (ELE)
+6.3 Corpus Evaluation Strategies
+6.3.1 Intrinsic vs. Extrinsic Evaluation
+6.3.2 Cross-Validation and Training/Test Splits
+6.4 Sequence Modeling and POS Tagging
+6.4.1 Hidden Markov Models and the Viterbi Algorithm
+6.4.2 Conditional Random Fields (CRFs)
+6.5 Vector-Space Models and Pointwise Mutual Information (PMI)
+
+CHAPTER 7: SEMANTICS AND LOGICAL FORM
+chapter_id: CH07
+part: Part II: Semantic Interpretation
+keywords: logical form, semantic interpretation, word senses, speech acts, thematic roles
+summary:
+This chapter discusses the formal representation of meaning, contrasting context-independent semantics with context-dependent pragmatic usage. It introduces Logical Form based on First-Order Predicate Calculus as an intermediate representation that acts as a function updating discourse situations. Additionally, it defines word sense ambiguity, speech acts, and thematic roles such as AGENT, THEME, and LOCATION for structuring propositions.
+
+subtopics:
+7.1 Semantics vs. Contextual Interpretation
+7.1.1 Logical Form as a Situation Function
+7.2 Word Senses and Semantic Units
+7.3 Ambiguity Types: Syntactic, Word Sense, and Semantic
+7.4 Speech Acts and Discourse Utterances
+7.5 Thematic Roles and Case Representations
+7.5.1 AGENT, THEME, INSTR, LOCATION, and TIME
+7.5.2 Primary vs. Secondary Events and CO-THEME Roles
+
+CHAPTER 8: LINKING SYNTAX AND SEMANTICS
+chapter_id: CH08
+part: Part II: Semantic Interpretation
+keywords: compositionality, lambda calculus, lambda reduction, feature unification, natural language generation
+summary:
+This chapter addresses compositionality by linking syntactic structures directly to semantic logical forms. It utilizes Lambda Calculus and lambda reduction rules to combine constituent meanings systematically during sentence parsing. Furthermore, it details semantic interpretation via feature unification without lambda reduction, demonstrating reversible grammars for generating natural language sentences from logical forms.
+
+subtopics:
+8.1 Compositionality and the SEM Feature
+8.2 Simple Grammar and Lexicon with Semantic Interpretation
+8.3 Lambda Calculus and Lambda Reduction
+8.4 Prepositional Phrases and Verb Phrase Modifiers
+8.5 Semantic Interpretation Using Feature Unification
+8.6 Handling Simple Questions and Gap Semantics
+8.7 Generating Sentences from Logical Form
+
+CHAPTER 9: AMBIGUITY RESOLUTION: SELECTIONAL RESTRICTIONS
+chapter_id: CH09
+part: Part II: Semantic Interpretation
+keywords: selectional restrictions, abstraction hierarchy, constraint satisfaction, semantic networks, word sense disambiguation
+summary:
+This chapter investigates techniques for filtering sense ambiguities using semantic constraints known as selectional restrictions. By organizing concepts into an abstraction hierarchy of subclasses and semantic networks, the parser enforces restrictions on predicate-argument combinations like verb AGENT and THEME requirements. It frames disambiguation as a constraint satisfaction problem and explores statistical word sense disambiguation using context window probabilities.
+
+subtopics:
+9.1 Selectional Restrictions as Constraint Satisfaction
+9.2 Abstraction Hierarchies and Word Sense Categories
+9.3 Semantic Networks and Subpart Relationships
+9.4 Statistical Word Sense Disambiguation
+9.4.1 Unigram Statistics and Context Windows
+9.4.2 Combining Unary and Binary Relations
+
+CHAPTER 10: OTHER STRATEGIES FOR SEMANTIC INTERPRETATION
+chapter_id: CH10
+part: Part II: Semantic Interpretation
+keywords: grammatical relations, logical subject, logical object, semantic grammars, pattern matching
+summary:
+This chapter presents alternative semantic interpretation strategies that abstract away complex syntactic details or customize parsing for specific domains. It explains how grammatical relations like LSUBJ and LOBJ bridge syntax and logic via pattern-matching rules and verb hierarchies. Additionally, it explores domain-tailored semantic grammars, discussing their rapid development benefits for narrow tasks alongside their lack of domain portability.
+
+subtopics:
+10.1 Grammatical Relations and Dependency Triplets
+10.1.1 Logical Subject (LSUBJ) and Logical Object (LOBJ)
+10.1.2 Pattern Matching Rules and Verb Hierarchies
+10.2 Semantic Grammars
+10.2.1 Domain-Specific Rules and Lexical Categories
+10.2.2 Parse Trees as Logical Forms
+10.2.3 Trade-offs: Rapid Development vs. Lack of Portability
+10.3 Template Matching
+10.4 Semantically-Driven Parsing Techniques
+
+CHAPTER 11: KNOWLEDGE REPRESENTATION AND REASONING
+chapter_id: CH11
+part: Part III: Context and Knowledge Representation
+keywords: knowledge base, general knowledge, specific knowledge, inference techniques, procedural semantics
+summary:
+This chapter covers Knowledge Representation (KR) formalisms and reasoning mechanisms necessary for contextual interpretation. It distinguishes between general hierarchical world knowledge and specific situational facts stored in a Knowledge Base (KB). Furthermore, it details deductive and non-monotonic inference techniques, natural language quantification handling sets as objects, and procedural semantics for executing database queries.
+
+subtopics:
+11.1 Knowledge Representation and Context
+11.1.1 General Knowledge Hierarchies vs. Specific Knowledge
+11.2 Knowledge Bases and Representation Languages
+11.3 Inference Techniques: Deductive vs. Non-Monotonic Reasoning
+11.4 Natural Language Quantifications and Sets as Objects
+11.5 Temporal Representation and Procedural Semantics
